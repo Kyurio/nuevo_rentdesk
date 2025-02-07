@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioBOLETA xmlns="http://www.sii.cl/SiiDte" version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioBOLETA_v11.xsd">
+  <SetDTE ID="ENVBOL-20250118023625">
+    <Caratula version="1.0">
+      <RutEmisor>77367969-K</RutEmisor>
+      <RutEnvia>6285461-8</RutEnvia>
+      <RutReceptor/>
+      <FchResol>2014-08-22</FchResol>
+      <NroResol>80</NroResol>
+      <TmstFirmaEnv>2025-01-18T02:36:24</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>39</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE version="1.0">
+      <Documento ID="R77367969-KT39F1722">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>39</TipoDTE>
+            <Folio>1722</Folio>
+            <FchEmis>2025-01-18</FchEmis>
+            <IndServicio>3</IndServicio>
+            <FchVenc>2025-01-18</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>77367969-K</RUTEmisor>
+            <RznSocEmisor>MEDITERRANEO RENTAS INMOBILIARIAS SPA</RznSocEmisor>
+            <GiroEmisor>NEGOCIOS INMOBILIARIOS</GiroEmisor>
+            <CdgSIISucur>999999999</CdgSIISucur>
+            <DirOrigen>AV. ANDRES BELLO 2777 OFICINA 1902</DirOrigen>
+            <CmnaOrigen>LAS CONDES</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>6525807-2</RUTRecep>
+            <RznSocRecep>VICTOR ARSENIO PEREZ MAYOR</RznSocRecep>
+            <DirRecep/>
+            <CmnaRecep/>
+            <CiudadRecep>NUnOA</CiudadRecep>
+            <Contacto/>
+            <DirPostal>JOSE DOMINGO CANAS # 1840 DPTO 105</DirPostal>
+            <CmnaPostal>NUnOA</CmnaPostal>
+          </Receptor>
+          <Totales>
+            <MntNeto>34897</MntNeto>
+            <IVA>6630</IVA>
+            <MntTotal>41527</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <NmbItem>COMISION ADMINISTRACION</NmbItem>
+          <DscItem>JOSE DOMINGO CANAS # 1840 DPTO 105</DscItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>41527</PrcItem>
+          <MontoItem>41527</MontoItem>
+        </Detalle>
+        <TmstFirma>2025-01-18T02:36:24</TmstFirma>
+      </Documento>
+    </DTE>
+  </SetDTE>
+</EnvioBOLETA>

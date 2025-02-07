@@ -1,0 +1,1071 @@
+
+		<!doctype html>
+		<html>
+		<head>
+		<meta charset='utf-8'>
+		<title>Informacion Clientes</title>
+		</head>
+		<body>
+			<table   border='0' cellspacing='0' cellpadding='1'>
+		<tr>
+		<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> Excel Personas </td>
+		</tr>
+		<tr>
+		<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+		</tr>
+		
+		<tr>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Id Ficha</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Nombre</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Rut</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Correo electronico</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Tipo persona</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Direccion</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Roles</td>
+		</tr>
+ 
+ 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#145</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Sergio Salgado Beltran</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4119208-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>sergio@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Doctor Genaro Benavides  6486 La Reina Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#144</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Nombre 18379902-9 Paterno 18379902-9 Materno 18379902-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>18379902-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>nombre@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Lia Aguirre  1837 La Florida Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#143</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Prueba de datos</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10743066-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>claudio@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Ignacio garcia Silva 1778 Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#142</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Generico Generico Generico</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>98993573-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Generico  Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#141</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3216503-6</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>juan@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maya 4381 Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#140</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Cliente X Apellido Apellido 2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21960471-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>b@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903  Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#139</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9208060-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur 4001 Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#138</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Raquel Donoso Venega</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>r@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Michimalongo 10212 El Bosque Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#137</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Test Test Test</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4148933-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903  Antofagasta Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#132</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Rodríguez Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2541259-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Talca Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#131</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Graciela Martinez Martinez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>8062076-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1955 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#130</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Patricia Lopez Lopez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>7518618-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1963 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#129</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Graciela Sanchez Sanchez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1268791-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1920 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#128</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3621832-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Copiapó Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#127</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carmen Gloria González Moreno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>6865681-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>carmen@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle Paine  1234 Paine Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#126</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maria del Pilar González Moreno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5632401-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>pilar@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle La Reina 1234 La Reina Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#125</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Jose Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3000119-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 1500 Camiña Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#124</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alejandro Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4154028-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#123</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2114637-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 1500 Tierra Amarilla Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#122</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Camilo Barrera Flores</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2430832-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>cb@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1910 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#121</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Lopez Calderón</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>44444444-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>sfsfd@gmail.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alameda 12233  Máfil Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#120</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Nombre 9166096 ApellPat 9166096 ApellMat 9166096</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9166096-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9166096@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Lia Aguirre 9166096 La Florida Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#119</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3976259-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>lira 1500 Tierra Amarilla Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#118</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1715376-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 4001 Cañete Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#117</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>  </td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3336732-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3336732@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Lia Aguirre 3336732 La Florida Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#116</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>  </td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3071268-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>lira  Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#115</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SA ARPIS</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3974320-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>arpis@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>maya 4381 Puente Alto Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#112</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>6444607-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Olivar Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#111</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carla Galleguillos Gonzalez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1657624-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 1212 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#110</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Olga Moreno Vivanco</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2390335-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>olga@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Rengo 10172 El Bosque Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#109</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>DiseñoJP SPA.</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4786383-k</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>as@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 19123 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#108</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera JPrueba</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5887688-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>38 orienet 1912 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#107</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Vera Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2963842-k</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#106</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SA ARPIS</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3523180-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 1500 Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#105</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Martín González Soto</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9472270-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Caldera Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#104</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>María Rodríguez González</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2187738-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Santa Juana Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#103</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Pérez Pérez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1714559-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Los Andes Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#102</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Distribuidora de Alimentos y Productos Variados Ltda.</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4773729-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>n@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#101</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Hector Romero Romero</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1361957-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>n@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur 4001 Talca Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#100</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Nora Romero Romero</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5440553-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>n@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#99</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Gustavo Araya Araya</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>12231923-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>G@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 1152 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#98</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Colores SPA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>14195028-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 1157 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#97</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Ana Gutierrez Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>16143477-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>A@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 1140 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#96</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Pablo Gutierrez Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1723772-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Pablop1p2@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto marin williams 1175 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#95</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maria Elza Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10159973-6</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>muribe@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Humberto Marin Williams 1158 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Arrendatario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#94</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Perez Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>23424</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alamed 456 Juan Fernández Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#93</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Francisco Lorca Gonzalez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>324234</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alameda 123 O'Higgins Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#92</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ALBERTO ARPIS</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>92383745-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>b@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>lira 1500 Santiago Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#91</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19737972-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903  Pichidegua Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#90</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Pedro Rivera Garin</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>8343188-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903  Pelarco Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#89</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maria Herrera Herrera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>11701642-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#88</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JpInfo SPA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>52747701-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#87</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angelina Perez Lopez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10327277-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>av siempre viva 1234  San Joaquín Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#83</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>persona prueba J Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22130095-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Puqueldón Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#82</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Vera Toledo</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>77777777-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Los Andes Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#81</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>persona prueba J Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba pass</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 Río Verde Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#80</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Diseño</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>53664245-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#79</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>123</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>75544346-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>jp@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#78</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Paulina Soledad Vera Vera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>39694424-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur 4001 Talca Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#77</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carolina Vera Vera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>18225343-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>c@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#76</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Camilo Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>55555555-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#75</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carlos Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>6659170-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 4001 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#74</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JBF</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>999999999</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>j@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur 4001 Talca Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#73</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>11181215-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#72</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>7601888-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur  La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#71</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Damte Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10065880-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>d@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#70</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>V Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5493633-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>v@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1912 La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#69</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>José Carlos Flores Barrera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>17293414-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>jcs.barrera@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Larraguibel 1916 Punitaqui Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Arrendatario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#68</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Paulina G Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>17327967-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>38 orienet 4001 Talca Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#66</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>324234 32423 234324</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>32423432423</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>324234234  Camarones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#65</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>123</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>44444</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4 Sur  La Serena Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#64</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22226</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>alberto@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>122 455 Iquique Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#63</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>dsdsd</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>121221</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>alberto@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 1221 Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#62</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera 22 22</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22223</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22@gmail.cm</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 975 Copiapó Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#61</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Test 22222 22222 22222</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22222</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>alberto@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 121 Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#59</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Prueba Alberto R P</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>11111</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 213 Mejillones Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#57</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Rodrigo Ortega Forner</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>14470025-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>rodrigoortega@fuenzalida.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>La Malvas 280 dp 7 Las Condes Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#56</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19308202</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>alberto@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANDRES BELLO 2777 1903 121 Lo Espejo Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#54</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Astorga Vega</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19309005-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>claudioAstorgavega@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Ignacio garcia Silva 1778 Maipú Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#53</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Persona 9820 Paterno Materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9820</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 0117 Santiago Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#52</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carolina Astorga Vega</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>20076076-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>carolina@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Ignacio garcia Silva 1778 Maipú Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#51</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Persona Prueba 001 Paterno Materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>001</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 117 El Bosque Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Arrendatario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#50</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Prueba Persona Arrendatario Paterno Materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>117</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 18 El Bosque Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Arrendatario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#48</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora capacitación</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>94-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dir hoy 19 Marchihue Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Arrendatario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#46</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora lunes</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>93-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dir Lunes 19 Paihuano Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#45</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora martes 5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>92-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle Lira 19 Codegua Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#45</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora martes 5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>92-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle Lira 19 Codegua Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#42</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora martes 5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>91-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dir martes    19 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#40</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora lunes</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>90-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dir Lunes 19 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Arrendatario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#38</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Prueba 117 paterno materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>23213-2313</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 117 La Reina Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#37</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba modificada 6 paterno materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21312312-54</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 25 Arica Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#36</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Pardo Lorca</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5555</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>superxxxxxx@gmail.com</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Las Perdices 123 La Florida Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#35</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Astorga Moreno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10.743.066-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>claudio@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Lia Aguirre 412 La Florida Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div><div>-Arrendatario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#34</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Patricio Prueba paterno materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1231-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>patricio@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 15 La Cisterna Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Arrendatario</div><div>-Codeudor</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#33</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Patricio paterno prueba materno prueba</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1231-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección prueba 15 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#32</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Jaime Molina N</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>222</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 1 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#31</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba portal prueba asd</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3242-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 22 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#30</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba razon social</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>678-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 22 Vicuña Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#29</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba portal prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1231-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@correo.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 22 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#28</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba paterno prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>999-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 19 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#27</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba paterno prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>correo@prueba.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 19 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#26</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba pat prueba mat</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba@fuenzalida.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Dirección de prueba 19 Chañaral Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#21</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora Prueba Propiedades Prueba y asociados</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>50-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>nuevocorreo@sistema.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle tres 40 Alto del Carmen Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#21</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora Prueba Propiedades Prueba y asociados</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>50-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>nuevocorreo@sistema.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Calle 4 60 Peumo Chile</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><div>-Cliente</div><div>-Propietario</div></td>
+		</tr>
+		
+  </table>
+		</body>
+		</html>
+		

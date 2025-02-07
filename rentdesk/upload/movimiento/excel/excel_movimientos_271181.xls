@@ -1,0 +1,184 @@
+
+		<!doctype html>
+		<html>
+		<head>
+		<meta charset='utf-8'>
+		<title>Movimientos - Varios Acreedores </title>
+		</head>
+		<body>
+			<table   border='0' cellspacing='0' cellpadding='1'>
+		<tr>
+		<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> Excel Propiedad </td>
+		</tr>
+		<tr>
+		<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+		</tr>
+		
+		<tr>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Id cierre</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Fecha</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Propiedad</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Propietario/Beneficiario</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Tipo</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Rázon</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Monto</td>
+		</tr>
+ 
+ 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > GERMAN HERNANDEZ BRAVO # 1177 , Peñaflor , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>474095</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > LLANO SUBERCASEAUX # 3361 1608, San Miguel , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>345653</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > LLANO SUBERCASEAUX # 3361 1001 - D, San Miguel , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>464951</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > ASUNCIÓN 2643 , Maipú , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ANTICIPO REPARACION FILTRACION TICKET 4387</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>426563</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > PROFESOR DARIO SALAS DIAZ 885 , Puente Alto , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>101502</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > NUEVA COMPAÑIA # 425 404, Santiago , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>81485</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > HUENTENO # 1699 , Maipú , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO TRABAJOS DE REPARACION</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>325000</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > RICARDO MORALES # 2994 507, San Miguel , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>622283</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > FRAY ANGELICO 7167 , DPTO. 601 BD63 BX69, Las Condes , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>PAGO GC MARZO #80745</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>100417</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > TOMAS MORO 60 , Las Condes , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO TRABAJOS DE REPARACION</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>395000</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > RICARDO MORALES # 2994 507, San Miguel , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>130298</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > TOESCA 2246 , Santiago , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO TRABAJOS DE REPARACION</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>190000</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > HANNOVER 5750 , D-1205, BX-196, BD-170, La Reina , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO TRABAJOS DE REPARACION</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>75000</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1082</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > GERMAN HERNANDEZ BRAVO # 1177 , Peñaflor , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Descuento VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1001757</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1081</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > SEMINARIO # 760 , Ñuñoa , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO REPARACION ELECTRICA TICKET 4490</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>210000</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1081</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > SAN PABLO 1539 DPTO 1403, Santiago , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>PAGO GC MAYO #83068</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>71151</td>
+		</tr 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1081</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19-06-2024</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=' class='link-info' > CUADRO VERDE 160 162  (p+), Estación Central , Metropolitana  </a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Abono VA</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SALDO REPARACION FILTRACION TRAMO CAÑERIA TICKET 4534</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>255938</td>
+		</tr 
+  </table>
+		</body>
+		</html>
+		

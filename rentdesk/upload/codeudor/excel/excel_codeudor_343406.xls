@@ -1,0 +1,35 @@
+
+		<!doctype html>
+		<html>
+		<head>
+		<meta charset='utf-8'>
+		<title>Informacion Clientes</title>
+		</head>
+		<body>
+			<table   border='0' cellspacing='0' cellpadding='1'>
+		<tr>
+		<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> Excel Codeudor </td>
+		</tr>
+		<tr>
+		<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+		</tr>
+		
+		<tr>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Id Ficha</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Nombre</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Nro documento</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Tipo persona</td>
+		</tr>
+ 
+ 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>#142</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Generico Generico Generico</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>98993573-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+  </table>
+		</body>
+		</html>
+		

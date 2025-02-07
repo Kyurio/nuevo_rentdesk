@@ -1,0 +1,47 @@
+
+		<!doctype html>
+		<html>
+		<head>
+		<meta charset='utf-8'>
+		<title>Informacion Clientes</title>
+		</head>
+		<body>
+			<table   border='0' cellspacing='0' cellpadding='1'>
+		<tr>
+		<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> Excel Propiedad </td>
+		</tr>
+		<tr>
+		<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+		</tr>
+		
+		<tr>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Id Ficha</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Oficina captadora</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Ejecutivo</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Propiedad/Beneficiario</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Tipo Propiedad</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Direccion</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Comuna</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Region</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Estado</td>
+
+
+		</tr>
+ 
+ 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propiedad&view=propiedad_ficha_tecnica&token=5e0cdc1a91b2be447658d261deace636' class='link-info' > #91</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Viña del Mar</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>david@arpis.cl</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><br><i class='fa-solid fa-house-user' style='color:#515151;font-size:12px;' title='Propietario' ></i> ALBERTO ARPIS ALBERTO ARPIS | 92383745-0<br>&nbsp;&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-user-large' style='font-size:10px; color:#707070;' title='Beneficiario'></i> Alberto | 19308202-5<br>&nbsp;&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-user-large' style='font-size:10px; color:#707070;' title='Beneficiario'></i> aaaa | 19308202-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Departamento</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maya</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Mejillones</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Antofagasta</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Arrendada</td>
+		</tr>
+		
+  </table>
+		</body>
+		</html>
+		

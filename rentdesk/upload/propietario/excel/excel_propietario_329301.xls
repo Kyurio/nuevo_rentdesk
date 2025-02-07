@@ -1,0 +1,350 @@
+
+		<!doctype html>
+		<html>
+		<head>
+		<meta charset='utf-8'>
+		<title>Informacion Clientes</title>
+		</head>
+		<body>
+			<table   border='0' cellspacing='0' cellpadding='1'>
+		<tr>
+		<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> Excel Propietario </td>
+		</tr>
+		<tr>
+		<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+		</tr>
+		
+		<tr>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Id Ficha</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Nombre</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Nro documento</td>
+		<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Tipo persona</td>
+		</tr>
+ 
+ 
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=5bd214ae3cc70f3570e3e80409e528dd' class='link-info' > #145</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Sergio Salgado Beltran</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4119208-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=896d8779f1783429a2ab34f1984aba9e' class='link-info' > #141</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3216503-6</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=eee640cd0f4a4475d0e7c72eb790ab95' class='link-info' > #140</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Cliente X Apellido Apellido 2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>21960471-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=ddf7a4f682d113070791426e5569687a' class='link-info' > #138</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Raquel Donoso Venega</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=feae8f6abda2e0332d44b9538dd55b9f' class='link-info' > #137</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Test Test Test</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>4148933-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=86e2e36b25d02ea0b32b4e6eb635b48f' class='link-info' > #132</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Rodríguez Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2541259-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=8d4787809a0e457ca668f775226498ac' class='link-info' > #131</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Graciela Martinez Martinez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>8062076-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=a09e9819cdc9d1cf67e11d44f10527b5' class='link-info' > #129</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Graciela Sanchez Sanchez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1268791-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=6a4d24541ab771476627f847c647da75' class='link-info' > #128</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3621832-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=0aeaa2f480028a5a55281580cf8bed60' class='link-info' > #126</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Maria del Pilar González Moreno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5632401-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=46480229fedade8dc3d9c02d82831154' class='link-info' > #121</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Lopez Calderón</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>44444444-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=f6a028853a62c12905c037669f140695' class='link-info' > #120</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Nombre 9166096 ApellPat 9166096 ApellMat 9166096</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9166096-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=33c7318ab5f2d47bb7e00807ec576790' class='link-info' > #115</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>SA ARPIS</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3974320-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=680e61d2685fcf2fd630611adf7fa908' class='link-info' > #108</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angela Barrera JPrueba</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5887688-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b1dfe6b3faf56123c7933eece1e83b6d' class='link-info' > #105</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Martín González Soto</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9472270-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=9dbdacca36552fc1dfd62efccba07aff' class='link-info' > #94</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Juan Perez Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>23424</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=2226c757459d79d507e51e1324ecf809' class='link-info' > #92</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>ALBERTO ARPIS</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>92383745-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=683d5ba368b8907a45f4582be47e681f' class='link-info' > #91</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera Perez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>19737972-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b66db2862e4eb23d7ad63c52f15f9c1c' class='link-info' > #90</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Pedro Rivera Garin</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>8343188-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=a335cbad597ec5a9f9088c37579f9a07' class='link-info' > #87</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Angelina Perez Lopez</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10327277-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=ee4e7c08c21e3b3e886585d6e57d65ef' class='link-info' > #78</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Paulina Soledad Vera Vera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>39694424-3</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=7ba632e68a0881a75edd4a0553291e54' class='link-info' > #77</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carolina Vera Vera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>18225343-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=3e9ec4ae852f08a28f96accd520921c4' class='link-info' > #73</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>p Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>11181215-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=68b3f295b9d3bc433d398262127b3dd1' class='link-info' > #70</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>V Barrera Rojas</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5493633-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=85f86c67db4261b26d07fe0862ce9c85' class='link-info' > #69</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>José Carlos Flores Barrera</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>17293414-5</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=9d6109657ec69544944ff952c14f5b3f' class='link-info' > #68</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Paulina G Uribe</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>17327967-1</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=ebc41c07355468e6e54b966f2960396b' class='link-info' > #65</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>123</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>44444</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=f08ad8103cdce97784e9b64d1554141a' class='link-info' > #62</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Alberto Rivera 22 22</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>22223</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=e9b7df5876a04ffd62e034983eb00925' class='link-info' > #57</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Rodrigo Ortega Forner</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>14470025-2</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=816dd768e36e2d45f4b85e60cb0ee203' class='link-info' > #53</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Persona 9820 Paterno Materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9820</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=1b3d26130289795a073aa0ca952af55f' class='link-info' > #52</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Carolina Astorga Vega</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>20076076-K</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b051c9ee5c8aeaa4cead5ae5b9411437' class='link-info' > #51</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Persona Prueba 001 Paterno Materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>001</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=0d5b96379191867d0117fc4635ed6ec0' class='link-info' > #46</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora lunes</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>93-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=8e4d9633b4b777d0b5fd33de40392788' class='link-info' > #40</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora lunes</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>90-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=607d62b67616359b99a2c0e23adb7f27' class='link-info' > #38</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Prueba 117 paterno materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>23213-2313</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=c6d5e4a03a60e8fd7887d25f64db7a97' class='link-info' > #35</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Claudio Astorga Moreno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>10.743.066-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=a3ae202c4a87cc6c174c7625c60e2943' class='link-info' > #33</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Patricio paterno prueba materno prueba</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1231-8</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=3e3c4651bf215304ac5a67b1d39258a9' class='link-info' > #32</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Jaime Molina N</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>222</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b7ee16e99c94621d981ca98bbd0c6401' class='link-info' > #31</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba portal prueba asd</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>3242-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=21ccd20b1f7281e8ae2ac3b60c7769a0' class='link-info' > #30</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba razon social</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>678-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>JURIDICA</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=9085826cd6cd322f1c343aa732bd4a74' class='link-info' > #29</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba portal prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1231-9</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=94fb7424b9ef843672401b5ebf821a00' class='link-info' > #28</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba paterno prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>999-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=13342108cfe9d2cd33e4baf5f41ca71e' class='link-info' > #27</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba paterno prueba materno</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>9-4</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=89e02ee9f72336fc73033a2633c97c77' class='link-info' > #26</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>prueba nombre prueba pat prueba mat</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2-7</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b1e636eebbc64bfad506ca28cb2417ef' class='link-info' > #21</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora Prueba Propiedades Prueba y asociados</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>50-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+		<tr>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'><a href='index.php?component=propietario&view=propietario_ficha_tecnica&token=b1e636eebbc64bfad506ca28cb2417ef' class='link-info' > #21</a></td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Corredora Prueba Propiedades Prueba y asociados</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>50-0</td>
+		<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>NATURAL</td>
+		</tr>
+		
+  </table>
+		</body>
+		</html>
+		

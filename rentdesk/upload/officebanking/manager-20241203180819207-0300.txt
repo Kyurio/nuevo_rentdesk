@@ -1,0 +1,219 @@
+tipo_comprobante	fecha_ingreso	total_comprobante	estado_comprobante	glosa_comprobante	codigo_cuenta	debe	haber	descripcion_movimiento	codigo_area_negocio	codigo_centro_gestion	tipo_de_libro	tipo_de_documento	dte	numero_documento	rut	nombre
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010501	0	380016	15000 en 1 cuotas		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010501	0	619984	15000 en 1 cuotas		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	200000	RENTENCION		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	13376	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	7600	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	500000	0	PAGO ARRIENDO		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	500000	0	pago arriendo agosto		1		ANT		830	113-9	BUERAS 172 103
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	200000	0	PAGO ARRIENDO		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	0	COMISIÓN ADMINISTRACIÓN		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	633360	RENTENCION		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	633360	RENTENCION		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	420000	0	PAGO ARRIENDO		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	33600	COMISIÓN ADMINISTRACIÓN		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	6384	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	380016	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	40000	COMISIÓN ADMINISTRACIÓN		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	452400	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	72640	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	633360	DESCUENTO DE ANTICIPO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	156000	RENTENCION		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	462360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	618360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	1000000	DESCUENTO DE ANTICIPO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	283360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010301	0	283360	RENTENCION		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	15000	0	Trabajos de repacion 		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	0	15000	Cargo a la renta		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	210720	RENTENCION		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	-200000	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	356000	RENTENCION		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	266720	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010501	0	380016	15000 en 1 cuotas		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010501	0	619984	15000 en 1 cuotas		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	200000	RENTENCION		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	13376	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1574	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	7600	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	500000	0	PAGO ARRIENDO		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	500000	0	pago arriendo agosto		1		ANT		830	113-9	BUERAS 172 103
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	200000	0	PAGO ARRIENDO		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	0	COMISIÓN ADMINISTRACIÓN		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	633360	RENTENCION		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	633360	RENTENCION		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	1010201	420000	0	PAGO ARRIENDO		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	33600	COMISIÓN ADMINISTRACIÓN		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2040101	0	6384	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	380016	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1572	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	3010103	0	40000	COMISIÓN ADMINISTRACIÓN		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-28	0	Aprobado	Saldo anterior	2010303	0	452400	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		1570	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	72640	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	633360	DESCUENTO DE ANTICIPO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	156000	RENTENCION		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	462360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		814	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	618360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		816	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	1000000	DESCUENTO DE ANTICIPO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	283360	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010501	0	15000	DESCUENTO DE ANTICIPO		1		ANT		810	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		826	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010301	0	283360	RENTENCION		1		ANT		822	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		812	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	15000	0	Trabajos de repacion 		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	0	15000	Cargo a la renta		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	0	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		830	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		802	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	10285	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	210720	RENTENCION		1		ANT		820	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		803	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		808	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	676667	0	PAGO ARRIENDO		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	-200000	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		806	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010102	0	350000	COMISIÓN CORRETAJE		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2040101	0	66500	IVA COMISIÓN CORRETAJE		1		ANT		801	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	1010501	0	350000	DESCUENTO DE ANTICIPO		1		ANT		824	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010303	0	180749	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	1010201	700000	0	PAGO ARRIENDO		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	2010301	0	356000	RENTENCION		1		ANT		818	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2010303	0	266720	PAGO DE LIQUIDACION A PROPIETARIO		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-27	0	Aprobado	Saldo anterior	2040101	0	10640	IVA COMISIÓN ADMINISTRACIÓN		1		ANT		828	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	54133	COMISIÓN ADMINISTRACIÓN		1		ANT		804	5529-8	El canquen 06406 
+Traspaso	2024-11-26	0	Aprobado	Saldo anterior	3010103	0	56000	COMISIÓN ADMINISTRACIÓN		1		ANT		806	5529-8	El canquen 06406 

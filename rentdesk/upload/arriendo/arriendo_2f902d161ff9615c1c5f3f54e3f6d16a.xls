@@ -1,0 +1,101 @@
+
+ 
+ <!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pago Comision Franquicia</title>
+</head>
+
+<body>
+	<table   border='0' cellspacing='0' cellpadding='1'>
+ <tr>
+<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> DATOS OFICINA </td>
+</tr>
+<tr>
+<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+</tr>
+ 
+<tr>
+<td colspan='3' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>NOMBRE OFICINA</td>
+<td colspan='5' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Las Tranqueras</td>
+</tr>
+<tr>
+<td colspan='3' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>RAZÓN SOCIAL</td>
+<td colspan='5' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>RIAL SpA</td>
+</tr>
+<tr>
+<td colspan='3' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>RUT</td>
+<td colspan='5' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>77427809-5</td>
+</tr>
+<tr>
+<td colspan='3' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>DIRECCIÓN</td>
+<td colspan='5' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Avenida Las Condes 7700, Of. 602</td>
+</tr>
+<tr>
+<td colspan='3' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>PERIODO</td>
+<td colspan='5' style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>2023-06</td>
+</tr>
+</table>
+	<br>
+	<table   border='0' cellspacing='0' cellpadding='1'>
+ <tr>
+<td colspan='14' style='background-color:#C0C0C0;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:14px; text-align:center;'> DETALLE COMISIONES </td>
+</tr>
+<tr>
+<td colspan='14' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> </td>
+</tr>
+ 
+<tr>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Codigo</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Fecha Ingreso</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Fecha Ultimo Pago</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:16px;'>Monto Ultimo Pago</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Propiedad</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Comuna</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Renta</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:12px;'>% Comision Administración</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:12px;'>Monto Comisión</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>30% Franquicia</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>100% Propiedad Nueva</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Neto</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Iva (19%)</td>
+<td style='background-color:#1f268e; color: #ffffff; border: 1px solid #363636; font-family:Arial; font-size:12px; padding:4px;'>Bruto</td>
+</tr>
+ 
+ 
+						<tr>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>78040</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2016-07-12</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2023-06-02</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1005378</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>O´CONNEL # 70 , DPTO. 1203</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>Las Condes</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>1005378</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>5</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>50269</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>15081</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>0</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>15081</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>2865</td>
+						<td style='background-color: #ffffff ;  color: #000000; border: 1px solid #363636; font-family:Arial; font-size:12px;'>17946</td>
+						</tr>
+						
+						<tr>
+						<td colspan='14' style='background-color: #ffffff ;  color: #000000; font-family:Arial; font-size:12px; text-align:right;'>  </td>
+						</tr>
+						<tr>
+						<td colspan='10' style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'> Total Comision     </td>
+						<td style='background-color: #ffffff ;  color: #000000;  font-family:Arial; font-size:12px; text-align:right;'></td>
+						<td style='background-color: #ffffff ; border: 1px solid #363636;  color: #000000;  font-family:Arial; font-size:12px;'>15081</td>
+						<td style='background-color: #ffffff ; border: 1px solid #363636;  color: #000000; font-family:Arial; font-size:12px;'>2865</td>
+						<td style='background-color: #ffffff ; border: 1px solid #363636;  color: #000000; font-family:Arial; font-size:12px;'>17946</td>
+						</tr>
+						<tr>
+						<td colspan='10' style='background-color: #ffffff ;  color: #000000; font-family:Arial; font-size:12px; text-align:right;'>  </td>
+						<tr>
+						
+  </table>
+ </body>
+ </html>
+ 

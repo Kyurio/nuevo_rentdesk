@@ -1,0 +1,19 @@
+{
+    "name": "rentdesk/includes",
+    "autoload": {
+        "psr-4": {
+            "Rentdesk\\Includes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arpis",
+            "email": "arpis@arpis.cl"
+        }
+    ],
+	
+	"require": {
+        "php": ">=7.3.0",
+        "phpoffice/phpspreadsheet": "^2.1"
+	}	
+}
