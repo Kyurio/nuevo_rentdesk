@@ -155,7 +155,7 @@
 
                     if (cheque.depositado == false) {
 
-                       var depositoContenido =`<label class="switch">
+                        var depositoContenido = `<label class="switch">
                             <input name="deposito" class="form-check-input switchChecks" type="checkbox" role="switch" 
                                     monto="${cheque.monto}" token-cheque="${cheque.tokencheque}" data-token="${cheque.token}" id-propiedad="${cheque.id_propiedad}">
                             <span class="slider round"></span>
@@ -167,7 +167,7 @@
                         $("#depositarCheques").hide();
                     }
 
-
+                    //data-orden maneja el ordenamiento por int y no por string
                     $('#tablaCheques tbody').append(
                         `<tr>
                             <td><a href="index.php?component=arriendo&view=arriendo_ficha_tecnica&token=${cheque.tokenfichaarriendo}">${cheque.ficha_arriendo}</a></td>
@@ -177,7 +177,7 @@
                             <td>${cheque.nombre_banco}</td>
                             <td>${cheque.girador}</td>
                             <td>${cheque.numero_cheque}</td>
-                            <td>${formatCurrency(cheque.monto)}</td>
+                            <td data-order="${cheque.monto}">${formatCurrency(cheque.monto)}</td>
                             <td>
                                 <div class="d-flex">
                                     ${depositoContenido} 
