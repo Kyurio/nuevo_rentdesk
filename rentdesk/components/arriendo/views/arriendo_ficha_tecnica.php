@@ -29,11 +29,11 @@ $peso_archivo = $config->maxSizeMB;
 
 <div id="header" class="header-page">
 	<!-- <h2 class="mb-3">Ficha Técnica</h2> -->
-	<div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+	<div style="--bs-breadcrumb-divider: '>'; font-size: 20px;" aria-label="breadcrumb">
 		<ol class="breadcrumb d-flex align-items-center m-0">
 			<li class="breadcrumb-item"><a href="index.php?component=dashboard&view=dashboard" style="text-decoration: none;color:#66615b"><span>Inicio</span></a></li>
 			<li class="breadcrumb-item" style="color: #e62238" aria-current="page"><a href="index.php?component=arriendo&view=arriendo_list" style="text-decoration: none;color:#66615b">Arriendos</a></li>
-			<li class="breadcrumb-item active" style="font-weight:600;color: #e62238" aria-current="page">#<?php echo $id_ficha; ?></li>
+			<li class="breadcrumb-item active" style="font-weight:600;color: #e62238" aria-current="page">#<?php echo $id_ficha; ?> <span id="direccionFichaArriendo" style="color:rgb(106, 106, 106)"></span></li>
 		</ol>
 	</div>
 </div>

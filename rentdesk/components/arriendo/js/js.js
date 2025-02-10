@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-
+	getDireccion();
 	SeleccionacobrarComisionAdministracion();
 	//BRUNO TORRES
 	$('#descargarExcelArriendo').on('click', function (e) {
@@ -93,7 +92,7 @@ $(document).ready(function () {
 			},
 		});
 	});
-	
+
 	inicializarTablaArriendos();
 
 	$('.js-example-responsive').select2({
@@ -184,7 +183,7 @@ $(document).ready(function () {
 
 	try {
 		document.getElementById('botonEliminaSeccion').style.display = 'none';
-	} catch (error) { }
+	} catch (error) {}
 	//botonEliminar.style.display = 'none';
 	onChangePersona();
 });
@@ -806,7 +805,6 @@ function validarComisionAdministracion() {
 }
 
 function enviarRentdesk() {
-	
 	var formData = new FormData(document.getElementById('formulario'));
 
 	var url = window.location.href;
@@ -838,13 +836,18 @@ function enviarRentdesk() {
 		}
 	});
 
-	var facturarComisionAdministracion = document.getElementById('facturarComisionAdministracion').value
+	var facturarComisionAdministracion = document.getElementById(
+		'facturarComisionAdministracion'
+	).value;
 
 	// Convertimos los objetos a JSON y los agregamos al formData
 	formData.append('dataMeses', JSON.stringify(dataMeses));
 	formData.append('dataMonedas', JSON.stringify(dataMonedas));
 	formData.append('dataAplica', JSON.stringify(dataAplica));
-	formData.append('facturarComisionAdministracion', facturarComisionAdministracion);
+	formData.append(
+		'facturarComisionAdministracion',
+		facturarComisionAdministracion
+	);
 	// const propiedad_input = document.getElementById("codigo_propiedad");
 	// var propiedad = propiedad_input.value;
 
@@ -1912,22 +1915,26 @@ function cargarCheques() {
 					newRow.append(
 						`<td><div class="d-flex">
                       <label class="switch">
-                        <input name="desposito" class="form-check-input switchCheques" type="checkbox" role="switch" ${desposito} data-token="${item.token
+                        <input name="desposito" class="form-check-input switchCheques" type="checkbox" role="switch" ${desposito} data-token="${
+							item.token
 						}">
                         <span class="slider round"></span>
-                        <span class="switchText">${item.desposito ? 'Si' : 'No'
-						}</span>
+                        <span class="switchText">${
+													item.desposito ? 'Si' : 'No'
+												}</span>
                       </label>
                   </div></td>`
 					);
 					newRow.append(
 						`<td><div class="d-flex">
                       <label class="switch">
-                        <input name="cobrar" class="form-check-input switchCheques" type="checkbox" role="switch" ${cobrar} data-token="${item.token
+                        <input name="cobrar" class="form-check-input switchCheques" type="checkbox" role="switch" ${cobrar} data-token="${
+							item.token
 						}">
                         <span class="slider round"></span>
-                        <span class="switchText">${item.cobrar ? 'Si' : 'No'
-						}</span>
+                        <span class="switchText">${
+													item.cobrar ? 'Si' : 'No'
+												}</span>
                       </label>
                   </div></td>`
 					);
@@ -1935,23 +1942,32 @@ function cargarCheques() {
 					newRow.append(
 						`<td>
                       <div class='d-flex align-items-center' style='gap: .5rem;'>
-                        <a href="#" type="button" class="btn btn-secondary m-0" style="padding: .5rem;${item.comentario === '' ? 'visibility: hidden;' : ''
-						}"  aria-label="Info" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="${item.comentario
+                        <a href="#" type="button" class="btn btn-secondary m-0" style="padding: .5rem;${
+													item.comentario === '' ? 'visibility: hidden;' : ''
+												}"  aria-label="Info" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="${
+							item.comentario
 						}">
                           <i class="fa-solid fa-circle-info" style="font-size: .75rem;"></i>
                         </a>
-                        <a data-bs-toggle='modal' onclick='cargarChequesEditar(${item.id
-						}, ${item.monto}, "${item.razon}", ${item.banco
-						}, "${moment(item.fecha_cobro).format('YYYY-MM-DD')}", "${item.girador
-						}", ${item.numero_documento}, ${item.cantidad}, "${item.comentario
+                        <a data-bs-toggle='modal' onclick='cargarChequesEditar(${
+													item.id
+												}, ${item.monto}, "${item.razon}", ${
+							item.banco
+						}, "${moment(item.fecha_cobro).format('YYYY-MM-DD')}", "${
+							item.girador
+						}", ${item.numero_documento}, ${item.cantidad}, "${
+							item.comentario
 						}")' data-bs-target='#modalChequesEditar' type='button' class='btn btn-info m-0 d-flex align-items-center' style='padding: .5rem;' aria-label='Editar' title='Editar'>
                           <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i>
                         </a>
-                        <button onclick='eliminarCheques(${item.id}, ${item.monto
+                        <button onclick='eliminarCheques(${item.id}, ${
+							item.monto
 						}, "${item.razon}", ${item.banco}, "${moment(
 							item.fecha_cobro
-						).format('YYYY-MM-DD')}", "${item.girador}", ${item.numero_documento
-						}, ${item.cantidad
+						).format('YYYY-MM-DD')}", "${item.girador}", ${
+							item.numero_documento
+						}, ${
+							item.cantidad
 						})' type='button' class='btn btn-danger m-0 d-flex align-items-center' style='padding: .5rem;' title='Eliminar'>
                           <i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
                         </button>
@@ -2012,6 +2028,41 @@ function cargarChequesEditar(
 }
 
 // *********** bruno *************
+function getDireccion() {
+	// Obtener token de la URL
+	var url = window.location.href;
+	var parametros = new URL(url).searchParams;
+	var token_propiedad = parametros.get('token');
+
+	// Llamada AJAX
+	$.ajax({
+		url: 'components/arriendo/models/get_direccion.php',
+		type: 'post',
+		data: {
+			token: token_propiedad,
+		},
+		success: function (response) {
+			// Aquí puedes procesar la respuesta, p.ej. parsear JSON
+			const data = JSON.parse(response);
+			if (data && data.length > 0) {
+				// Asumiendo que solo tomas la primera fila, por ejemplo
+				// Parsea la respuesta JSON
+				const data = JSON.parse(response);
+				if (data && data.length > 0) {
+					// Asigna el texto al span
+					$('#direccionFichaArriendo').text(data[0].direccion);
+				} else {
+					console.log('No se encontró dirección');
+				}
+			} else {
+				console.log('No se encontró dirección');
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error('Error:', error);
+		},
+	});
+}
 
 function editarCheque() {
 	var formData = new FormData(
@@ -2172,12 +2223,12 @@ function cargarDocumentos() {
 					if (item.token_agrupador != previousId) {
 						newRow.append(
 							"<td><div class='d-flex align-items-center' style='gap: .5rem;'> <a data-bs-toggle='modal' data-bs-target='#modalTituloEditar' type='button' onclick='cargarTituloDocumentosEditar(\"" +
-							item.titulo +
-							'","' +
-							item.token_agrupador +
-							"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
-							item.titulo +
-							'</label></div></td>'
+								item.titulo +
+								'","' +
+								item.token_agrupador +
+								"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
+								item.titulo +
+								'</label></div></td>'
 						);
 						previousId = item.token_agrupador;
 					} else {
@@ -2186,8 +2237,8 @@ function cargarDocumentos() {
 					if (item.nombre_archivo != null && item.nombre_archivo != '') {
 						newRow.append(
 							"<td><i class='fa-solid fa-chevron-right'></i> " +
-							item.nombre_archivo +
-							'</td>'
+								item.nombre_archivo +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -2201,8 +2252,8 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-							'</td>'
+								moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -2211,8 +2262,8 @@ function cargarDocumentos() {
 					//console.log(item.link);
 					newRow.append(
 						"<td><div class='d-flex' style='gap: .5rem;'><a href='" +
-						item.link +
-						"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
+							item.link +
+							"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
 					);
 					if (
 						item.fecha_ultima_actualizacion != null &&
@@ -2220,12 +2271,12 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-							(item.fecha_ultima_actualizacion
-								? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
-								: '-') +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								(item.fecha_ultima_actualizacion
+									? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
+									: '-') +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -2937,8 +2988,8 @@ function cargarServicios() {
 					if (item.tipo_moneda == 'UF') {
 						newRow.append(
 							"<td style='text-align: right; max-width:120px; width:120px;'>" +
-							item.monto +
-							'</td>'
+								item.monto +
+								'</td>'
 						);
 					} else {
 						var montoFormateado = item.monto.toLocaleString('es-CL', {
@@ -2947,8 +2998,8 @@ function cargarServicios() {
 						});
 						newRow.append(
 							"<td style='text-align: right; max-width:120px; width:120px;'>" +
-							montoFormateado +
-							'</td>'
+								montoFormateado +
+								'</td>'
 						);
 					}
 
@@ -2959,8 +3010,8 @@ function cargarServicios() {
 					);
 					newRow.append(
 						'<td>' +
-						moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-						'</td>'
+							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+							'</td>'
 					);
 					if (
 						item.fecha_modificacion != null &&
@@ -2968,12 +3019,12 @@ function cargarServicios() {
 					) {
 						newRow.append(
 							'<td>' +
-							(item.fecha_modificacion
-								? moment(item.fecha_modificacion).format('DD-MM-YYYY')
-								: '-') +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								(item.fecha_modificacion
+									? moment(item.fecha_modificacion).format('DD-MM-YYYY')
+									: '-') +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3045,8 +3096,8 @@ function cargarSeguros() {
 					if (item.tipo_moneda == 'UF') {
 						newRow.append(
 							"<td style='text-align: right; max-width:120px; width:120px;'>" +
-							item.monto +
-							'</td>'
+								item.monto +
+								'</td>'
 						);
 					} else {
 						var montoFormateado = item.monto.toLocaleString('es-CL', {
@@ -3055,8 +3106,8 @@ function cargarSeguros() {
 						});
 						newRow.append(
 							"<td style='text-align: right; max-width:120px; width:120px;'>" +
-							montoFormateado +
-							'</td>'
+								montoFormateado +
+								'</td>'
 						);
 					}
 
@@ -3067,8 +3118,8 @@ function cargarSeguros() {
 					);
 					newRow.append(
 						'<td>' +
-						moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-						'</td>'
+							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+							'</td>'
 					);
 					if (
 						item.fecha_modificacion != null &&
@@ -3076,12 +3127,12 @@ function cargarSeguros() {
 					) {
 						newRow.append(
 							'<td>' +
-							(item.fecha_modificacion
-								? moment(item.fecha_modificacion).format('DD-MM-YYYY')
-								: '-') +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								(item.fecha_modificacion
+									? moment(item.fecha_modificacion).format('DD-MM-YYYY')
+									: '-') +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3651,10 +3702,10 @@ function cargarInfoComentario() {
 					) {
 						newRow.append(
 							'<td>' +
-							formateoNulos(item.fecha_comentario) +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								formateoNulos(item.fecha_comentario) +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3833,10 +3884,10 @@ function cargarInfoArrendatario() {
 					// Agregar celdas a la fila con los datos
 					newRow.append(
 						'<td><a href="index.php?component=persona&view=persona&token=' +
-						item.token_persona +
-						'" target="_blank">' +
-						formateoNulos(item.dni) +
-						'</a></td>'
+							item.token_persona +
+							'" target="_blank">' +
+							formateoNulos(item.dni) +
+							'</a></td>'
 					);
 
 					newRow.append(
@@ -3905,7 +3956,7 @@ function cargarCCMovimientos() {
 		ccMovimientosTable.ajax
 			.url(
 				'components/arriendo/models/listado_cc_movimientos.php?idFicha=' +
-				idFicha
+					idFicha
 			)
 			.load();
 		return;
@@ -4061,7 +4112,6 @@ function guardarCcCargo() {
 	var jsonInformacionNueva = obtenerValoresFormulario('cc_cargo');
 	var id_ficha = $('#id_ficha').val();
 
-
 	const ccTipoMovimientoCargo = document.getElementById(
 		'ccTipoMovimientoCargo'
 	);
@@ -4083,7 +4133,6 @@ function guardarCcCargo() {
 
 	var ccIdresponsable = $('#idResponsableCargo').val();
 	var cccta_contable = $('#cccta_contableCargo').val();
-
 
 	if (tipo_movimiento != 4) {
 		if (ccIngresoPagoRazon == null || ccIngresoPagoRazon == '') {
@@ -4127,13 +4176,11 @@ function guardarCcCargo() {
 		formData.append('ccIngresoPagoMonto', ccIngresoPagoMonto);
 		formData.append('ccIngresoPagoMoneda', ccIngresoPagoMoneda);
 		formData.append('ccIngresoPagoFecha', ccIngresoPagoFecha);
-		
+
 		formData.append('ccIdresponsable', ccIdresponsable);
 		formData.append('cccta_contable', cccta_contable);
 
 		formData.append('id_ficha', id_ficha);
-
-
 	}
 
 	var url = window.location.href;
@@ -4244,7 +4291,7 @@ function GuardarAbonos() {
 		return;
 	}
 
-	var ccIdresponsable = $('#idResponsableAbono').val(); 
+	var ccIdresponsable = $('#idResponsableAbono').val();
 	var cccta_contable = $('#cccta_contable').val();
 
 	formData.append('ccTipoMovimientoAbono', ccTipoMovimientoAbono);
@@ -4255,7 +4302,6 @@ function GuardarAbonos() {
 
 	formData.append('ccIdresponsable', ccIdresponsable);
 	formData.append('cccta_contable', cccta_contable);
-
 
 	var id_ficha = $('#id_ficha').val();
 	var url = window.location.href;
@@ -5340,7 +5386,7 @@ function guardarGarantia(token, tipo) {
 	if (mensaje) {
 		$('.error-descuento-garantia').html(
 			"<strong><span style='color:#313131;'>Atención: </span></strong>" +
-			mensaje
+				mensaje
 		);
 		return; // Salir de la función si hay errores
 	}
@@ -5784,7 +5830,6 @@ function ActualizarGarantia() {
 
 // }
 
-
 // Función para guardar Descuento
 function guardarDescuento(token) {
 	// Captura los datos del formulario
@@ -5887,26 +5932,30 @@ function cargarCheques() {
 					newRow.append(`
 						<td>
 							<div class='d-flex align-items-center' style='gap: .5rem;'>
-								<a href="#" type="button" class="btn btn-secondary m-0" style="padding: .5rem; ${item.comentario === '' ? 'visibility: hidden;' : ''
-						}" 
-									aria-label="Info" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="${item.comentario
-						}">
+								<a href="#" type="button" class="btn btn-secondary m-0" style="padding: .5rem; ${
+									item.comentario === '' ? 'visibility: hidden;' : ''
+								}" 
+									aria-label="Info" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="${
+										item.comentario
+									}">
 									<i class="fa-solid fa-circle-info" style="font-size: .75rem;"></i>
 								</a>
-								<a data-bs-toggle='modal' onclick='cargarChequesEditar(${item.id
-						}, ${item.monto}, "${item.razon}", ${item.banco}, 
+								<a data-bs-toggle='modal' onclick='cargarChequesEditar(${
+									item.id
+								}, ${item.monto}, "${item.razon}", ${item.banco}, 
 									"${moment(item.fecha_cobro).format(
-							'YYYY-MM-DD'
-						)}", "${item.girador}", ${item.numero_documento}, ${item.cantidad}, 
+										'YYYY-MM-DD'
+									)}", "${item.girador}", ${item.numero_documento}, ${item.cantidad}, 
 									"${item.comentario}")' data-bs-target='#modalChequesEditar' type='button' 
 									class='btn btn-info m-0 d-flex align-items-center' style='padding: .5rem;' aria-label='Editar' title='Editar' ${disabled}>
 									<i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i>
 								</a>
-								<button onclick='eliminarCheques(${item.id
-						}, ${item.monto}, "${item.razon}", ${item.banco}, 
+								<button onclick='eliminarCheques(${
+									item.id
+								}, ${item.monto}, "${item.razon}", ${item.banco}, 
 									"${moment(item.fecha_cobro).format(
-							'YYYY-MM-DD'
-						)}", "${item.girador}", ${item.numero_documento}, ${item.cantidad})' 
+										'YYYY-MM-DD'
+									)}", "${item.girador}", ${item.numero_documento}, ${item.cantidad})' 
 									type='button' class='btn btn-danger m-0 d-flex align-items-center' style='padding: .5rem;' title='Eliminar' ${disabled}>
 									<i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
 								</button>
@@ -6039,29 +6088,6 @@ function actualizarEstados(nombre, token, boolean) {
 	});
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // jhernandez funcion para listar los tipos de movimientos de cuentas corrientes cargos.
 function CargarSelectTipoMovimientosCC() {
 	// Realizar la solicitud AJAX
@@ -6072,7 +6098,7 @@ function CargarSelectTipoMovimientosCC() {
 		success: function (data) {
 			// Ordenar los datos por la descripción
 			data.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
-			
+
 			// Limpiar el select y agregar opción inicial
 			const select = $('#ccTipoMovimientoCargo');
 			select.empty(); // Limpiamos el select antes de añadir opciones
@@ -6099,7 +6125,9 @@ function CargarSelectTipoMovimientosCC() {
 
 			// Asignar manejador al evento change
 			select.off('change').on('change', function () {
-				const id_responsable_cargo = $(this).find(':selected').data('idresponsablecargo');
+				const id_responsable_cargo = $(this)
+					.find(':selected')
+					.data('idresponsablecargo');
 				$('#idResponsableCargo').val(id_responsable_cargo);
 
 				const cta_corriente = $(this).find(':selected').data('ctacorriente');
@@ -6113,89 +6141,63 @@ function CargarSelectTipoMovimientosCC() {
 	});
 }
 
-
 // jhernandez funcion para listar los tipos de movimientos de cuentas corrientes abonos.
 function CargarSelectTipoMovimientosCCAbono() {
-    $.ajax({
-        url: 'components/arriendo/models/TipoMovimientosAbono.php',
-        method: 'GET',
-        dataType: 'json',
-        success: function (data) {
-            console.log('Datos recibidos:', data); // Verificar datos recibidos
+	$.ajax({
+		url: 'components/arriendo/models/TipoMovimientosAbono.php',
+		method: 'GET',
+		dataType: 'json',
+		success: function (data) {
+			console.log('Datos recibidos:', data); // Verificar datos recibidos
 
-            // Ordenar los datos por descripción
-            data.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
+			// Ordenar los datos por descripción
+			data.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
 
-            // Limpiar el select y agregar opción inicial
-            const select = $('#ccTipoMovimientoAbono');
-            select.empty(); // Limpiar el select
-            select.append(
-                $('<option>', {
-                    value: '', // Valor vacío
-                    text: 'Selecciona una opción', // Texto visible
-                    disabled: true, // Deshabilitado para evitar selección
-                    selected: true, // Marcado como predeterminado
-                })
-            );
+			// Limpiar el select y agregar opción inicial
+			const select = $('#ccTipoMovimientoAbono');
+			select.empty(); // Limpiar el select
+			select.append(
+				$('<option>', {
+					value: '', // Valor vacío
+					text: 'Selecciona una opción', // Texto visible
+					disabled: true, // Deshabilitado para evitar selección
+					selected: true, // Marcado como predeterminado
+				})
+			);
 
-            // Crear opciones en el select con los datos recibidos
-            $.each(data, function (index, movimiento) {
-                select.append(
-                    $('<option>', {
-                        value: movimiento.id,
-                        text: movimiento.descripcion,
-                        'data-idresponsableabono': movimiento.id_responsable,
-                        'data-cta_corriente': movimiento.cuentaco,
-                    })
-                );
-            });
+			// Crear opciones en el select con los datos recibidos
+			$.each(data, function (index, movimiento) {
+				select.append(
+					$('<option>', {
+						value: movimiento.id,
+						text: movimiento.descripcion,
+						'data-idresponsableabono': movimiento.id_responsable,
+						'data-cta_corriente': movimiento.cuentaco,
+					})
+				);
+			});
 
-            // Manejar el evento de cambio del select
-            select.off('change').on('change', function () {
-                // Obtener valores del option seleccionado
-                const selectedOption = $(this).find(':selected');
+			// Manejar el evento de cambio del select
+			select.off('change').on('change', function () {
+				// Obtener valores del option seleccionado
+				const selectedOption = $(this).find(':selected');
 
-                const id_responsable_abono = selectedOption.data('idresponsableabono');
-                $('#idResponsableAbono').val(id_responsable_abono || '');
+				const id_responsable_abono = selectedOption.data('idresponsableabono');
+				$('#idResponsableAbono').val(id_responsable_abono || '');
 
-                const cta_corriente = selectedOption.data('cta_corriente');
-                $('#cccta_contable').val(cta_corriente || '');
-            });
-        },
-        error: function (xhr, status, error) {
-            console.error('Error al obtener los datos:', error);
-        },
-    });
+				const cta_corriente = selectedOption.data('cta_corriente');
+				$('#cccta_contable').val(cta_corriente || '');
+			});
+		},
+		error: function (xhr, status, error) {
+			console.error('Error al obtener los datos:', error);
+		},
+	});
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
-    CargarSelectTipoMovimientosCCAbono();
+	CargarSelectTipoMovimientosCCAbono();
 });
-
-
 
 // jhernandez validacion de propiedades en estado retirada
 function ValidarPropiedadAarrendar(id) {
@@ -6442,12 +6444,9 @@ function LimpiarValorTipoMoneda() {
 	$('#precioContrato').val('');
 }
 
-
-
-// llena los select al editar los campos 
+// llena los select al editar los campos
 
 function SeleccionacobrarComisionAdministracion() {
-
 	// Obtener la URL actual
 	const url = new URL(window.location.href);
 	const token = url.searchParams.get('token');
@@ -6456,11 +6455,11 @@ function SeleccionacobrarComisionAdministracion() {
 		url: 'components/arriendo/models/SelectcobrarComisionAdministracion.php', // URL del archivo PHP
 		method: 'POST', // Método POST
 		dataType: 'json', // El servidor devolverá un JSON
-		data: { // Parámetros que se envían al PHP
-			token: token
+		data: {
+			// Parámetros que se envían al PHP
+			token: token,
 		},
 		success: function (data) {
-
 			if (data && data[0]) {
 				const $selectAdmin = $('#cobrarComisionAdministracion');
 				const $selectArriendo = $('#cobrarComisionArriendo');
@@ -6476,6 +6475,6 @@ function SeleccionacobrarComisionAdministracion() {
 		},
 		error: function (xhr, status, error) {
 			console.error('Error al cargar los datos:', error);
-		}
+		},
 	});
 }
