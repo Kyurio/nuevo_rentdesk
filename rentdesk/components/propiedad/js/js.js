@@ -1720,22 +1720,17 @@ function cargarCCMovimientosList() {
 							render: function (data, type, row) {
 								// Determinamos si se deshabilita el botón
 								const isDisabled = row.elimina === 0 ? 'disabled' : '';
-								const icon =
-									row.elimina === 0
-										? 'fa-solid fa-ban'
-										: 'fa-regular fa-trash-can';
-								const buttonColor = row.elimina === 1 ? 'danger' : 'secondary';
 
 								return `
                                     <button 
                                         type="button" 
-                                        class="btn btn-${buttonColor} m-0 mx-3" 
+                                        class="btn btn-danger m-0 mx-3" 
                                         style="padding: .5rem;" 
                                         title="Eliminar" 
                                         onclick="eliminarMovimiento(${row.idcc}, ${row.elimina})" 
                                         ${isDisabled}
                                     >
-                                        <i class="${icon} px-1" style="font-size: .75rem;"></i>
+                                        <i class="fa-regular fa-trash-can px-1" style="font-size: .75rem;"></i>
                                     </button>
                                 `;
 							},
@@ -1829,7 +1824,8 @@ function cargarCCMovimientosList() {
 
 // Función para manejar la eliminación de un registro
 function eliminarMovimiento(idcc, elimina) {
-	// Validación elimina (0 = no se puede eliminar, 1 = se puede eliminar)
+	//Validacion elimina (0 = no se puede eliminar, 1 = se puede eliminar)
+
 	if (elimina == 0) {
 		Swal.fire({
 			title: 'Acción no permitida',
@@ -1839,40 +1835,25 @@ function eliminarMovimiento(idcc, elimina) {
 		return;
 	}
 
-	// Mostrar ventana de confirmación antes de eliminar
-	Swal.fire({
-		title: 'Eliminar',
-		text: 'El movimiento de cuenta corriente será eliminado.',
-		icon: 'warning',
-		showCancelButton: true,
-		confirmButtonColor: '#d33',
-		cancelButtonColor: '#3085d6',
-		confirmButtonText: 'Eliminar',
-		cancelButtonText: 'Cancelar',
-	}).then((result) => {
-		if (result.isConfirmed) {
-			// Si el usuario confirma, realizamos la solicitud AJAX
-			$.ajax({
-				url: 'components/propiedad/models/eliminar_movimiento.php',
-				method: 'POST',
-				data: { idcc: idcc },
-				success: function (response) {
-					Swal.fire({
-						title: 'Movimiento eliminado',
-						icon: 'success',
-					});
-					// Actualizamos la lista de movimientos
-					cargarCCMovimientosList();
-				},
-				error: function (xhr, status, error) {
-					Swal.fire({
-						title: 'Error al eliminar el movimiento',
-						text: 'El movimiento no pudo ser eliminado.',
-						icon: 'error',
-					});
-				},
+	// Aquí puedes realizar una solicitud AJAX al servidor para cambiar el estado del movimiento
+	$.ajax({
+		url: 'components/propiedad/models/eliminar_movimiento.php',
+		method: 'POST',
+		data: { idcc: idcc },
+		success: function (response) {
+			Swal.fire({
+				title: 'Movimiento eliminado',
+				icon: 'success',
 			});
-		}
+			cargarCCMovimientosList();
+		},
+		error: function (xhr, status, error) {
+			Swal.fire({
+				title: 'Error al eliminar el movimiento',
+				text: 'El movimiento no pudo ser eliminado',
+				icon: 'error',
+			});
+		},
 	});
 }
 
