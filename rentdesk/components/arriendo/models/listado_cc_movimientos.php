@@ -15,8 +15,8 @@ $id_usuario = $_SESSION["rd_usuario_id"];
 $num_reg = 50;
 $inicio = 0;
 
-if (isset($_POST["idFicha"])) {
-    $idFicha = $_POST["idFicha"];
+if (isset($_GET["idFicha"])) {
+    $idFicha = $_GET["idFicha"];
     $queryCcMovimientos = "SELECT propiedades.fn_saldos_arrendatario($idFicha, 0)";
 }
 
