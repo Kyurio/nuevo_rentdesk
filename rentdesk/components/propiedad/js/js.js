@@ -4081,6 +4081,9 @@ function formateoNulos(text) {
 // Opción 1: Elimina al propietario con sus beneficiarios asociados
 // Opción 2: Sólo elimina al beneficiario (sólo si existe tokenBeneficiario)
 
+
+
+
 function cargarInfoCoPropietarios() {
 	// Obtiene el ID de la ficha técnica desde el input en la página
 	var idFicha = $('#ficha_tecnica').val();
@@ -4291,68 +4294,66 @@ function cargarInfoCoPropietarios() {
 	});
 }
 
+
+
+
+
+
 // jose trabajando aqui
 async function CargarInfoCopopieratioBeneficiario() {
 	var idFicha = $('#ficha_tecnica').val();
+	var timestamp = new Date().getTime(); // Para evitar caché en la solicitud
 
 	try {
-		const response = await fetch(
-			'components/propiedad/models/leer_infor_copropietario_beneficiario.php',
-			{
-				method: 'POST',
-				body: new URLSearchParams({ idFicha: idFicha }),
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			}
-		);
+		const response = await fetch(`components/propiedad/models/leer_infor_copropietario_beneficiario.php?t=${timestamp}`, {
+			method: "POST",
+			body: new URLSearchParams({ idFicha: idFicha }),
+			headers: { "Content-Type": "application/x-www-form-urlencoded" }
+		});
 
 		const responseData = await response.text();
-		console.log('🔹 responseData:', responseData);
+		console.log("🔹 responseData:", responseData);
 
 		let data;
 		try {
 			data = JSON.parse(responseData);
 		} catch (error) {
-			Swal.fire('Error', 'La respuesta del servidor no es válida.', 'error');
+			Swal.fire("Error", "La respuesta del servidor no es válida.", "error");
 			return;
 		}
 
 		if (!data || !data.copropietarios || !data.beneficiarios) {
-			Swal.fire(
-				'Error',
-				'No se encontraron datos para la ficha seleccionada.',
-				'warning'
-			);
+			Swal.fire("Error", "No se encontraron datos para la ficha seleccionada.", "warning");
 			return;
 		}
 
-		console.log('✅ Datos recibidos para la tabla:', data);
+		console.log("✅ Datos recibidos para la tabla:", data);
 
 		let formattedData = combinarDatos(data);
-		console.log('✅ Datos combinados para DataTable:', formattedData);
+		console.log("✅ Datos combinados para DataTable:", formattedData);
 
-		// Verificar si la tabla ya existe y limpiarla antes de recargar
-		if ($.fn.DataTable.isDataTable('#info-copropietarios')) {
-			$('#info-copropietarios').DataTable().clear().destroy();
+		// 🔹 Limpiar y volver a cargar la tabla
+		if ($.fn.DataTable.isDataTable("#info-copropietarios")) {
+			$("#info-copropietarios").DataTable().clear().destroy();
 		}
 
-		// 🔹 Inicializamos DataTable con los datos formateados
-		$('#info-copropietarios').DataTable({
+		$("#info-copropietarios").DataTable({
 			destroy: true,
 			data: formattedData,
 			columns: [
-				{ title: '', data: 'tipo' },
-				{ title: 'Propietario', data: 'propietario' },
-				{ title: 'RUT Propietario', data: 'rut_propietario' },
-				{ title: 'Nombre Titular', data: 'titular' },
-				{ title: 'RUT Titular', data: 'rut_titular' },
-				{ title: 'Cuenta Banco', data: 'cuenta_banco' },
-				{ title: '% Porcentaje Propietario', data: 'porcentaje_propietario' },
-				{ title: '% Porcentaje Beneficiario', data: 'porcentaje_beneficiario' },
-				{ title: 'Acciones', data: 'acciones', orderable: false },
+				{ title: "", data: "tipo" },
+				{ title: "Propietario", data: "propietario" },
+				{ title: "RUT Propietario", data: "rut_propietario" },
+				{ title: "Nombre Titular", data: "titular" },
+				{ title: "RUT Titular", data: "rut_titular" },
+				{ title: "Cuenta Banco", data: "cuenta_banco" },
+				{ title: "% Porcentaje Propietario", data: "porcentaje_propietario" },
+				{ title: "% Porcentaje Beneficiario", data: "porcentaje_beneficiario" },
+				{ title: "Acciones", data: "acciones", orderable: false }
 			],
 			paging: false,
 			searching: false,
-			ordering: false,
+			ordering: false
 		});
 
 		Swal.close(); // Cerrar SweetAlert cuando todo esté listo
@@ -4360,10 +4361,12 @@ async function CargarInfoCopopieratioBeneficiario() {
 		// 🔹 Llamar validaciones después de cargar los datos
 		validarTotalPorcentajes();
 		asignarEventosValidacion();
+
 	} catch (error) {
-		console.error('❌ Error al cargar los datos:', error);
+		console.error("❌ Error al cargar los datos:", error);
 	}
 }
+
 
 // 🔹 Función para combinar datos de copropietarios y beneficiarios
 function combinarDatos(data) {
@@ -4385,47 +4388,56 @@ function combinarDatos(data) {
 		// 🔹 Fila del copropietario
 		filas.push({
 			tipo: botonIngresoBeneficiario,
-			propietario: coprop.nombre ? coprop.nombre.trim() : '-',
-			rut_propietario: coprop.rut_propietario || '-',
-			titular: '-',
-			rut_titular: '-',
-			cuenta_banco: '-',
+			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
+			rut_propietario: coprop.rut_propietario || "-",
+			titular: "-",
+			rut_titular: "-",
+			cuenta_banco: "-",
 			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
                                       value="${coprop.porcentaje_participacion}" 
                                       data-id="${coprop.id_propietario}" 
-                                      min="0" max="100" step="0.01">`,
-			porcentaje_beneficiario: '-',
+                                      min="0" max="100" step="1">`,
+			porcentaje_beneficiario: "-",
+
 			acciones: `
-                <div class='d-flex' style='gap: .5rem;'>
-                    <button onclick='eliminarInfoCoPropietario({
-                        idRegistro: ${coprop.id},
-                        idPropiedad: ${coprop.id_propiedad},
-                        idPropietario: ${coprop.id_propietario}
-                    })' type='button' class='btn btn-danger eliminar-copropietario' 
-                       title='Eliminar'>
-                        <i class='fa-regular fa-trash-can'></i>
-                    </button>
-                </div>
-            `,
+			<div class='d-flex' style='gap: .5rem;'>
+				<button onclick='eliminarInfoCoPropietario({
+					idRegistro: ${coprop.id},
+					idPropiedad: ${coprop.id_propiedad},
+					idPropietario: ${coprop.id_propietario}
+				})' type='button' class='btn btn-secondary eliminar-copropietario' 
+				   title='Eliminar'>
+					<i class='fa-regular fa-trash-can'></i>
+				</button>
+			</div>
+		`
 		});
 
 		// 🔹 Beneficiarios del copropietario
 		data.beneficiarios.forEach((bene) => {
 			if (coprop.id_propietario === bene.id_propietario) {
 				filas.push({
-					tipo: '➥ Beneficiario',
-					propietario: '',
-					rut_propietario: '',
-					titular: bene.nombre || '-',
-					rut_titular: bene.rut || '-',
-					cuenta_banco: bene.numero_cuenta || '-',
-					porcentaje_propietario: '-',
+					tipo: "➥ Beneficiario",
+					propietario: "",
+					rut_propietario: "",
+					titular: bene.nombre || "-",
+					rut_titular: bene.rut || "-",
+					cuenta_banco: bene.numero_cuenta || "-",
+					porcentaje_propietario: "-",
 					porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
 					value="${bene.porcentaje}" 
 					data-id="${bene.id_propietario}" 
 					data-beneficiario-id="${bene.id}"  
-					min="0" max="100" step="0.01">`,
-					acciones: '',
+					min="0" max="100" step="1">`,
+					acciones: `
+					<div class='d-flex' style='gap: .5rem;'>
+						<button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
+							type='button' class='btn btn-danger eliminar-copropietario' 
+							   title='Eliminar'>
+							<i class='fa-regular fa-trash-can'></i>
+						</button>
+					</div>
+				`
 				});
 			}
 		});
@@ -4436,24 +4448,24 @@ function combinarDatos(data) {
 
 // 🔹 Validación de porcentajes en tiempo real
 function asignarEventosValidacion() {
-	$('.porcentaje-propietario').on('input', validarTotalPorcentajes);
-	$('.porcentaje-beneficiario').on('input', validarBeneficiarios);
+	$(".porcentaje-propietario").on("input", validarTotalPorcentajes);
+	$(".porcentaje-beneficiario").on("input", validarBeneficiarios);
 }
 
 // 🔹 Validar que los propietarios sumen exactamente 100%
 function validarTotalPorcentajes() {
 	let total = 0;
 
-	$('.porcentaje-propietario').each(function () {
+	$(".porcentaje-propietario").each(function () {
 		total += parseFloat($(this).val()) || 0;
 	});
 
-	$('#current-sum').text(total.toFixed(2));
+	$("#current-sum").text(total.toFixed(2));
 
 	if (total !== 100) {
-		$('#alertAvisoPorcentajeTotal').show();
+		$("#alertAvisoPorcentajeTotal").show();
 	} else {
-		$('#alertAvisoPorcentajeTotal').hide();
+		$("#alertAvisoPorcentajeTotal").hide();
 	}
 }
 
@@ -4461,8 +4473,8 @@ function validarTotalPorcentajes() {
 function validarBeneficiarios() {
 	let propietarios = {};
 
-	$('.porcentaje-beneficiario').each(function () {
-		let idPropietario = $(this).data('id');
+	$(".porcentaje-beneficiario").each(function () {
+		let idPropietario = $(this).data("id");
 		let valor = parseFloat($(this).val()) || 0;
 
 		if (!propietarios[idPropietario]) {
@@ -4475,9 +4487,9 @@ function validarBeneficiarios() {
 	for (let id in propietarios) {
 		if (propietarios[id] > 100) {
 			Swal.fire({
-				title: 'Atención',
+				title: "Atención",
 				text: `Los beneficiarios del propietario ID ${id} superan el 100%. Ajuste los porcentajes.`,
-				icon: 'warning',
+				icon: "warning",
 			});
 
 			$(event.target).val(0);
@@ -4486,12 +4498,75 @@ function validarBeneficiarios() {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+function eliminarInfoBeneficiario(id) {
+
+	Swal.fire({
+		title: '¿Estás seguro?',
+		text: 'Una vez eliminado, no podrás recuperar este propietario',
+		icon: 'warning',
+		showDenyButton: true,
+		confirmButtonText: 'Eliminar',
+		denyButtonText: 'Cancelar',
+	}).then((result) => {
+		if (result.isConfirmed) {
+			$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+
+			alert(id);
+
+			// Si el usuario hace clic en "Eliminar"
+			$.ajax({
+				url: 'components/propiedad/models/delete_info_beneficiario.php',
+				type: 'POST',
+				data: {
+					id_beneficiario: id,
+				},
+				success: function (response) {
+					cargarInfoCoPropietarios();
+
+					Swal.fire({
+						title: 'Propietario eliminado',
+						text: 'El propietario se eliminó correctamente',
+						icon: 'success',
+					}).then(() => {
+
+						// actualizar registros
+
+					});
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					console.error('Error en la solicitud:', textStatus, errorThrown);
+					// Aquí puedes mostrar un mensaje de error al usuario o realizar otras acciones
+				},
+			});
+
+		} else if (result.isDenied) {
+			// Si el usuario hace clic en "Cancelar"
+			// Aquí puedes cerrar el modal de SweetAlert si lo deseas
+			Swal.close();
+		}
+	});
+}
+
 function eliminarInfoCoPropietario({
 	idRegistro = null,
 	idPropiedad,
 	idPropietario,
 	tokenBeneficiario = null,
 }) {
+
 	Swal.fire({
 		title: '¿Estás seguro?',
 		text: 'Una vez eliminado, no podrás recuperar este propietario',
@@ -4546,6 +4621,8 @@ function eliminarInfoCoPropietario({
 		}
 	});
 }
+
+
 
 function llenarInputNumericoVacio() {
 	$(document).ready(function () {

@@ -35,7 +35,7 @@ $dataCopropietarios = ["consulta" => $queryCopropietarios];
 $resultadoCopropietarios = json_decode($services->sendPostNoToken($url_services . '/util/objeto', $dataCopropietarios), true);
 
 // Consulta para Beneficiarios
-$queryBeneficiarios = "SELECT * FROM propiedades.persona_beneficiario WHERE id_propiedad = $idFicha";
+$queryBeneficiarios = "SELECT *, id AS id_beneficiario FROM propiedades.persona_beneficiario WHERE id_propiedad = $idFicha AND habilitado = true";
 $dataBeneficiarios = ["consulta" => $queryBeneficiarios];
 $resultadoBeneficiarios = json_decode($services->sendPostNoToken($url_services . '/util/objeto', $dataBeneficiarios), true);
 
