@@ -12,10 +12,8 @@ sessionStorage.removeItem('comuna');
 sessionStorage.clear();
 
 $(document).ready(function () {
-
-	//jhernandez 
+	//jhernandez
 	CargarInfoCopopieratioBeneficiario();
-
 
 	// bruno
 
@@ -206,9 +204,46 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+	getDireccion();
 	cargarDocumentos();
 	cargarDocumentosSoloLectura();
 });
+
+function getDireccion() {
+	// Obtener token de la URL
+	var url = window.location.href;
+	var parametros = new URL(url).searchParams;
+	var token_propiedad = parametros.get('token');
+
+	// Llamada AJAX
+	$.ajax({
+		url: 'components/propiedad/models/get_direccion.php',
+		type: 'post',
+		data: {
+			token: token_propiedad,
+		},
+		success: function (response) {
+			// Aquí puedes procesar la respuesta, p.ej. parsear JSON
+			const data = JSON.parse(response);
+			if (data && data.length > 0) {
+				// Asumiendo que solo tomas la primera fila, por ejemplo
+				// Parsea la respuesta JSON
+				const data = JSON.parse(response);
+				if (data && data.length > 0) {
+					// Asigna el texto al span
+					$('#direccionFichaPropiedad').text(data[0].direccion);
+				} else {
+					console.log('No se encontró dirección');
+				}
+			} else {
+				console.log('No se encontró dirección');
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error('Error:', error);
+		},
+	});
+}
 
 $(document).ready(function () {
 	cargarInfoCoPropietariosPropiedad();
@@ -221,7 +256,6 @@ $(document).ready(function () {
 	cargarInfoComentario();
 
 	//BRUNO TORRES
-
 
 	$('#descargarExcelPropiedad').on('click', function (e) {
 		e.preventDefault();
@@ -358,34 +392,7 @@ function cargarInfoCuentaCorriente() {
 	cargarCCMovimientoSaldoActual();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function guardarCcAbono() {
-
 	var formData = new FormData(document.getElementById('cc_pago_no_liquidable'));
 
 	var jsonInformacionNueva = obtenerValoresFormulario('cc_pago_no_liquidable');
@@ -408,9 +415,9 @@ function guardarCcAbono() {
 	const cc_pago_fecha_input = document.getElementById('ccIngresoPagoNLFecha');
 	var ccIngresoPagoNLFecha = cc_pago_fecha_input.value;
 
-	var ccidResponsableAbono = document.getElementById('idResponsableAbono').value;
+	var ccidResponsableAbono =
+		document.getElementById('idResponsableAbono').value;
 	var ccctacorrienteAbono = document.getElementById('ctacorrienteAbono').value;
-
 
 	if (ccIngresoPagoNLRazon == null || ccIngresoPagoNLRazon == '') {
 		Swal.fire({
@@ -464,7 +471,6 @@ function guardarCcAbono() {
 	formData.append('ccTipoMovimientoAbono', ccTipoMovimientoAbono);
 	formData.append('ccidResponsableAbono', ccidResponsableAbono);
 	formData.append('ccctacorrienteAbono', ccctacorrienteAbono);
-
 
 	var id_ficha = $('#id_ficha').val();
 	var url = window.location.href;
@@ -525,27 +531,6 @@ function guardarCcAbono() {
 	cargarCCMovimientoSaldoActual();
 	cargarCCMovimientosList();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // funcion cargar ejecutivos jhernandez
 function CargarListadoEjecutivos() {
@@ -841,8 +826,8 @@ function cargarDocumentosSoloLectura() {
 					if (item.token_agrupador != previousId) {
 						newRow.append(
 							"<td><div class='d-flex align-items-center' style='gap: .5rem;'><label style='font-size: 1em; text-align: center; color: black;'>" +
-							item.titulo +
-							'</label></div></td>'
+								item.titulo +
+								'</label></div></td>'
 						);
 						previousId = item.token_agrupador;
 					} else {
@@ -851,8 +836,8 @@ function cargarDocumentosSoloLectura() {
 					if (item.nombre_archivo != null && item.nombre_archivo != '') {
 						newRow.append(
 							"<td><i class='fa-solid fa-chevron-right'></i> " +
-							item.nombre_archivo +
-							'</td>'
+								item.nombre_archivo +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -866,8 +851,8 @@ function cargarDocumentosSoloLectura() {
 					) {
 						newRow.append(
 							'<td>' +
-							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-							'</td>'
+								moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -876,8 +861,8 @@ function cargarDocumentosSoloLectura() {
 					//console.log(item.link);
 					newRow.append(
 						"<td><div class='d-flex' style='gap: .5rem;'><a href='" +
-						item.link +
-						"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
+							item.link +
+							"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
 					);
 					if (
 						item.fecha_ultima_actualizacion != null &&
@@ -885,12 +870,12 @@ function cargarDocumentosSoloLectura() {
 					) {
 						newRow.append(
 							'<td>' +
-							(item.fecha_ultima_actualizacion
-								? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
-								: '-') +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								(item.fecha_ultima_actualizacion
+									? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
+									: '-') +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -1027,10 +1012,10 @@ function cargarInfoComentario() {
 					) {
 						newRow.append(
 							'<td>' +
-							formateoNulos(item.fecha_comentario) +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								formateoNulos(item.fecha_comentario) +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -1223,7 +1208,9 @@ function guardarCcDescuento() {
 	var ccIngresoDescAutorizadoFecha = cc_pago_fecha_input.value;
 
 	var ccidResponsable = document.getElementById('idResponsableCargo').value;
-	var cccta_contableCargo = document.getElementById('cccta_contableCargo').value;
+	var cccta_contableCargo = document.getElementById(
+		'cccta_contableCargo'
+	).value;
 
 	if (ccTipoMovimiento == null || ccTipoMovimiento == '') {
 		Swal.fire({
@@ -1297,13 +1284,17 @@ function guardarCcDescuento() {
 	formData.append('ccTipoMovimiento', ccTipoMovimiento.value);
 	formData.append('ccIngresoDescAutorizadoRazon', ccIngresoDescAutorizadoRazon);
 	formData.append('ccIngresoDescAutorizadoMonto', ccIngresoDescAutorizadoMonto);
-	formData.append('ccIngresoDescAutorizadoMoneda', ccIngresoDescAutorizadoMoneda);
-	formData.append('ccIngresoDescAutorizadoCobraComision', ccIngresoDescAutorizadoCobraComision);
+	formData.append(
+		'ccIngresoDescAutorizadoMoneda',
+		ccIngresoDescAutorizadoMoneda
+	);
+	formData.append(
+		'ccIngresoDescAutorizadoCobraComision',
+		ccIngresoDescAutorizadoCobraComision
+	);
 	formData.append('ccIngresoDescAutorizadoFecha', ccIngresoDescAutorizadoFecha);
 	formData.append('ccidResponsable', ccidResponsable);
 	formData.append('cccta_contableCargo', cccta_contableCargo);
-
-
 
 	var id_ficha = $('#id_ficha').val();
 	var url = window.location.href;
@@ -1354,7 +1345,6 @@ function guardarCcDescuento() {
 				text: 'El cargo no se registró',
 				icon: 'warning',
 			});
-
 		});
 	$('#cc_descuento_autorizado')[0].reset();
 	$('#modalCuentaCorrienteIngresoDescuentoAutorizado').modal('hide');
@@ -1678,10 +1668,6 @@ function cargarCCMovimientoSaldoActual() {
 	// });
 }
 
-
-
-
-
 function cargarCCMovimientosList() {
 	var idFicha = $('#id_ficha').val();
 
@@ -1871,12 +1857,6 @@ function eliminarMovimiento(idcc, elimina) {
 	});
 }
 
-
-
-
-
-
-
 function formatCurrency(value) {
 	if (!value) return '$0.00';
 	return `$${parseFloat(value).toFixed(2).toLocaleString()}`;
@@ -1990,10 +1970,10 @@ function cargarInfoComentario() {
 					) {
 						newRow.append(
 							'<td>' +
-							formateoNulos(item.fecha_comentario) +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								formateoNulos(item.fecha_comentario) +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3211,10 +3191,10 @@ function cargarInfoPersonal(infoJSON) {
 	if (infoJSON[0].tipo_persona === 'NATURAL') {
 		$('#nombrePersona').text(
 			infoJSON[0].nombres +
-			' ' +
-			infoJSON[0].apellido_paterno +
-			' ' +
-			infoJSON[0].apellido_materno
+				' ' +
+				infoJSON[0].apellido_paterno +
+				' ' +
+				infoJSON[0].apellido_materno
 		);
 
 		$('#telefonoMovilPersona').text(
@@ -3224,14 +3204,14 @@ function cargarInfoPersonal(infoJSON) {
 		$('#tipoPersona').text(infoJSON[0].tipo_persona);
 		$('#direccionPersona').text(
 			infoJSON[0].direccion +
-			' #' +
-			infoJSON[0].numero +
-			', ' +
-			infoJSON[0].comuna +
-			', ' +
-			infoJSON[0].region +
-			', ' +
-			infoJSON[0].pais
+				' #' +
+				infoJSON[0].numero +
+				', ' +
+				infoJSON[0].comuna +
+				', ' +
+				infoJSON[0].region +
+				', ' +
+				infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -3256,14 +3236,14 @@ function cargarInfoPersonal(infoJSON) {
 		$('#tipoPersonaJuridica').text(infoJSON[0].tipo_persona);
 		$('#direccionPersonaJuridica').text(
 			infoJSON[0].direccion +
-			' #' +
-			infoJSON[0].numero +
-			', ' +
-			infoJSON[0].comuna +
-			', ' +
-			infoJSON[0].region +
-			', ' +
-			infoJSON[0].pais
+				' #' +
+				infoJSON[0].numero +
+				', ' +
+				infoJSON[0].comuna +
+				', ' +
+				infoJSON[0].region +
+				', ' +
+				infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -3528,12 +3508,12 @@ function cargarDocumentos() {
 					if (item.token_agrupador != previousId) {
 						newRow.append(
 							"<td><div class='d-flex align-items-center' style='gap: .5rem;'> <a data-bs-toggle='modal' data-bs-target='#modalTituloEditar' type='button' onclick='cargarTituloDocumentosEditar(\"" +
-							item.titulo +
-							'","' +
-							item.token_agrupador +
-							"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
-							item.titulo +
-							'</label></div></td>'
+								item.titulo +
+								'","' +
+								item.token_agrupador +
+								"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
+								item.titulo +
+								'</label></div></td>'
 						);
 						previousId = item.token_agrupador;
 					} else {
@@ -3542,8 +3522,8 @@ function cargarDocumentos() {
 					if (item.nombre_archivo != null && item.nombre_archivo != '') {
 						newRow.append(
 							"<td><i class='fa-solid fa-chevron-right'></i> " +
-							item.nombre_archivo +
-							'</td>'
+								item.nombre_archivo +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3557,8 +3537,8 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-							'</td>'
+								moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+								'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3567,8 +3547,8 @@ function cargarDocumentos() {
 					//console.log(item.link);
 					newRow.append(
 						"<td><div class='d-flex' style='gap: .5rem;'><a href='" +
-						item.link +
-						"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
+							item.link +
+							"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
 					);
 					if (
 						item.fecha_ultima_actualizacion != null &&
@@ -3576,12 +3556,12 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-							(item.fecha_ultima_actualizacion
-								? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
-								: '-') +
-							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-							item.nombre_usuario +
-							"'></i></td>"
+								(item.fecha_ultima_actualizacion
+									? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
+									: '-') +
+								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+								item.nombre_usuario +
+								"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3892,8 +3872,6 @@ function formateoNulos(text) {
 	return !text || text === '' ? '-' : text;
 }
 
-
-
 // function cargarInfoCoPropietarios() {
 // 	// Realizar la solicitud AJAX para obtener los datos
 // 	var idFicha = $('#ficha_tecnica').val();
@@ -3931,8 +3909,6 @@ function formateoNulos(text) {
 
 // 				// Iterate over grouped data to append rows to the table
 // 				Object.keys(groupedData).forEach((keys) => {
-
-
 
 // 					const keysArray = keys.split('|');
 // 					const id_propietario = keysArray[0];
@@ -4082,12 +4058,9 @@ function formateoNulos(text) {
 // 	});
 // }
 
-
 // Elimina (habilitado = false) condicionalmente
 // Opción 1: Elimina al propietario con sus beneficiarios asociados
 // Opción 2: Sólo elimina al beneficiario (sólo si existe tokenBeneficiario)
-
-
 
 function cargarInfoCoPropietarios() {
 	// Obtiene el ID de la ficha técnica desde el input en la página
@@ -4129,7 +4102,6 @@ function cargarInfoCoPropietarios() {
 					return acc;
 				}, {});
 
-
 				// Itera sobre los datos agrupados y genera las filas de la tabla
 				Object.keys(groupedData).forEach((keys) => {
 					const keysArray = keys.split('|');
@@ -4138,7 +4110,9 @@ function cargarInfoCoPropietarios() {
 
 					const items = groupedData[keys];
 					const parentRow = items.find((item) => item.nivel_propietario === 1);
-					const childRows = items.filter((item) => item.nivel_propietario === 2);
+					const childRows = items.filter(
+						(item) => item.nivel_propietario === 2
+					);
 
 					// Agrega la fila del propietario principal si existe
 					if (parentRow) {
@@ -4160,33 +4134,53 @@ function cargarInfoCoPropietarios() {
                                       <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
                                           title='Ingreso Beneficiario' data-bs-toggle="modal" 
                                           data-bs-target="#modalBeneficiarioIngreso" 
-                                          onclick="llenarIdPropietarioSeleccionado(${parentRow.id_propietario}, ${parentRow.id})">
+                                          onclick="llenarIdPropietarioSeleccionado(${
+																						parentRow.id_propietario
+																					}, ${parentRow.id})">
                                           <i class='fa-regular fa-plus' style='font-size: .75rem;'></i>
                                       </button>
                                   </div>
                               </td>
                               <td>${formateoNulos(parentRow.nombre)}</td>
-                              <td>${formateoNulos(formatRutChile(parentRow.dni))}</td>
-                              <td>${formateoNulos(parentRow.nombre_titular)}</td>
-                              <td>${formateoNulos(formatRutChile(parentRow.rut_titular))}</td>
+                              <td>${formateoNulos(
+																formatRutChile(parentRow.dni)
+															)}</td>
+                              <td>${formateoNulos(
+																parentRow.nombre_titular
+															)}</td>
+                              <td>${formateoNulos(
+																formatRutChile(parentRow.rut_titular)
+															)}</td>
                               <td>${formateoNulos(parentRow.cuenta_banco)}</td>
                               <td><input type="number" class="porcentaje_participacion_base parent-input numeric-vacio" 
                                   id="porcentaje_participacion_base_${id_propietario}" 
-                                  name="${parentRow.id_propietario}|${parentRow.id_cta_banc}|porc_part_base||${parentRow?.id}" 
+                                  name="${parentRow.id_propietario}|${
+							parentRow.id_cta_banc
+						}|porc_part_base||${parentRow?.id}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${parentRow.porcentaje_participacion_base}"></td>
+                                  value="${
+																		parentRow.porcentaje_participacion_base
+																	}"></td>
                               <td><input disabled type="number" class="porcentaje_participacion numeric-vacio" 
                                   id="porcentaje_participacion_${id_propietario}" 
-                                  name="${parentRow.id_propietario}|${parentRow.id_cta_banc}|porc_part||${parentRow?.id}" 
+                                  name="${parentRow.id_propietario}|${
+							parentRow.id_cta_banc
+						}|porc_part||${parentRow?.id}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${parentRow.porcentaje_participacion}"></td>
+                                  value="${
+																		parentRow.porcentaje_participacion
+																	}"></td>
                               <td>
                                   <div id="eliminarParent">
                                       <div class='d-flex' style='gap: .5rem;'>
                                           <button onclick='eliminarInfoCoPropietario({
                                               idRegistro: ${parentRow.id},
-                                              idPropiedad: ${parentRow.id_propiedad},
-                                              idPropietario: ${parentRow.id_propietario}
+                                              idPropiedad: ${
+																								parentRow.id_propiedad
+																							},
+                                              idPropietario: ${
+																								parentRow.id_propietario
+																							}
                                           })' type='button' class='btn btn-danger m-0 d-flex' style='padding: .5rem;' title='Eliminar'>
                                               <i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
                                           </button>
@@ -4201,27 +4195,37 @@ function cargarInfoCoPropietarios() {
 
 					// Agrega las filas de los beneficiarios secundarios
 					childRows.forEach((child, index) => {
-						console.log("respuesta dentro del foreach" + child.nombre);
+						console.log('respuesta dentro del foreach' + child.nombre);
 
 						let childRowHtml = `
                           <tr class="child-row table-info">
                               <td></td>
                               <td>${formateoNulos(child.nombre)}</td>
-                              <td>${formateoNulos(formatRutChile(child.dni))}</td>
+                              <td>${formateoNulos(
+																formatRutChile(child.dni)
+															)}</td>
                               <td>${formateoNulos(child.nombre_titular)}</td>
-                              <td>${formateoNulos(formatRutChile(child.rut_titular))}</td>
+                              <td>${formateoNulos(
+																formatRutChile(child.rut_titular)
+															)}</td>
                               <td>${formateoNulos(child.cuenta_banco)}</td>
                               <td>-</td>
                               <td><input type="number" class="porcentaje_participacion child-input numeric-vacio" 
                                   id="porcentaje_participacion_${id_propietario}_${index}" 
-                                  name="${child.id_propietario}||porc_part|${child.id_beneficiario}|${child?.id_relacion}" 
+                                  name="${child.id_propietario}||porc_part|${
+							child.id_beneficiario
+						}|${child?.id_relacion}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${child.porcentaje_participacion}"></td>
+                                  value="${
+																		child.porcentaje_participacion
+																	}"></td>
                               <td>
                                   <div class='d-flex' style='gap: .5rem;'>
                                       <button onclick='eliminarInfoCoPropietario({
                                           idPropiedad: ${child.id_propiedad},
-                                          idPropietario: ${child.id_propietario},
+                                          idPropietario: ${
+																						child.id_propietario
+																					},
                                           tokenBeneficiario: "${child.token}"
                                       })' type='button' class='btn btn-danger m-0 d-flex' style='padding: .5rem;' title='Eliminar'>
                                           <i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
@@ -4268,65 +4272,68 @@ function cargarInfoCoPropietarios() {
 	});
 }
 
-
-
-
-
 // jose trabajando aqui
 async function CargarInfoCopopieratioBeneficiario() {
 	var idFicha = $('#ficha_tecnica').val();
 
 	try {
-		const response = await fetch("components/propiedad/models/leer_infor_copropietario_beneficiario.php", {
-			method: "POST",
-			body: new URLSearchParams({ idFicha: idFicha }),
-			headers: { "Content-Type": "application/x-www-form-urlencoded" }
-		});
+		const response = await fetch(
+			'components/propiedad/models/leer_infor_copropietario_beneficiario.php',
+			{
+				method: 'POST',
+				body: new URLSearchParams({ idFicha: idFicha }),
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			}
+		);
 
 		const responseData = await response.text();
-		console.log("🔹 responseData:", responseData);
+		console.log('🔹 responseData:', responseData);
 
 		let data;
 		try {
 			data = JSON.parse(responseData);
 		} catch (error) {
-			Swal.fire("Error", "La respuesta del servidor no es válida.", "error");
+			Swal.fire('Error', 'La respuesta del servidor no es válida.', 'error');
 			return;
 		}
 
 		if (!data || !data.copropietarios || !data.beneficiarios) {
-			Swal.fire("Error", "No se encontraron datos para la ficha seleccionada.", "warning");
+			Swal.fire(
+				'Error',
+				'No se encontraron datos para la ficha seleccionada.',
+				'warning'
+			);
 			return;
 		}
 
-		console.log("✅ Datos recibidos para la tabla:", data);
+		console.log('✅ Datos recibidos para la tabla:', data);
 
 		let formattedData = combinarDatos(data);
-		console.log("✅ Datos combinados para DataTable:", formattedData);
+		console.log('✅ Datos combinados para DataTable:', formattedData);
 
 		// Verificar si la tabla ya existe y limpiarla antes de recargar
-		if ($.fn.DataTable.isDataTable("#info-copropietarios")) {
-			$("#info-copropietarios").DataTable().clear().destroy();
+		if ($.fn.DataTable.isDataTable('#info-copropietarios')) {
+			$('#info-copropietarios').DataTable().clear().destroy();
 		}
 
 		// 🔹 Inicializamos DataTable con los datos formateados
-		$("#info-copropietarios").DataTable({
+		$('#info-copropietarios').DataTable({
 			destroy: true,
 			data: formattedData,
 			columns: [
-				{ title: "", data: "tipo" },
-				{ title: "Propietario", data: "propietario" },
-				{ title: "RUT Propietario", data: "rut_propietario" },
-				{ title: "Nombre Titular", data: "titular" },
-				{ title: "RUT Titular", data: "rut_titular" },
-				{ title: "Cuenta Banco", data: "cuenta_banco" },
-				{ title: "% Porcentaje Propietario", data: "porcentaje_propietario" },
-				{ title: "% Porcentaje Beneficiario", data: "porcentaje_beneficiario" },
-				{ title: "Acciones", data: "acciones", orderable: false }
+				{ title: '', data: 'tipo' },
+				{ title: 'Propietario', data: 'propietario' },
+				{ title: 'RUT Propietario', data: 'rut_propietario' },
+				{ title: 'Nombre Titular', data: 'titular' },
+				{ title: 'RUT Titular', data: 'rut_titular' },
+				{ title: 'Cuenta Banco', data: 'cuenta_banco' },
+				{ title: '% Porcentaje Propietario', data: 'porcentaje_propietario' },
+				{ title: '% Porcentaje Beneficiario', data: 'porcentaje_beneficiario' },
+				{ title: 'Acciones', data: 'acciones', orderable: false },
 			],
 			paging: false,
 			searching: false,
-			ordering: false
+			ordering: false,
 		});
 
 		Swal.close(); // Cerrar SweetAlert cuando todo esté listo
@@ -4334,9 +4341,8 @@ async function CargarInfoCopopieratioBeneficiario() {
 		// 🔹 Llamar validaciones después de cargar los datos
 		validarTotalPorcentajes();
 		asignarEventosValidacion();
-
 	} catch (error) {
-		console.error("❌ Error al cargar los datos:", error);
+		console.error('❌ Error al cargar los datos:', error);
 	}
 }
 
@@ -4360,16 +4366,16 @@ function combinarDatos(data) {
 		// 🔹 Fila del copropietario
 		filas.push({
 			tipo: botonIngresoBeneficiario,
-			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
-			rut_propietario: coprop.rut_propietario || "-",
-			titular: "-",
-			rut_titular: "-",
-			cuenta_banco: "-",
+			propietario: coprop.nombre ? coprop.nombre.trim() : '-',
+			rut_propietario: coprop.rut_propietario || '-',
+			titular: '-',
+			rut_titular: '-',
+			cuenta_banco: '-',
 			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
                                       value="${coprop.porcentaje_participacion}" 
                                       data-id="${coprop.id_propietario}" 
                                       min="0" max="100" step="0.01">`,
-			porcentaje_beneficiario: "-",
+			porcentaje_beneficiario: '-',
 			acciones: `
                 <div class='d-flex' style='gap: .5rem;'>
                     <button onclick='eliminarInfoCoPropietario({
@@ -4381,26 +4387,26 @@ function combinarDatos(data) {
                         <i class='fa-regular fa-trash-can'></i>
                     </button>
                 </div>
-            `
+            `,
 		});
 
 		// 🔹 Beneficiarios del copropietario
 		data.beneficiarios.forEach((bene) => {
 			if (coprop.id_propietario === bene.id_propietario) {
 				filas.push({
-					tipo: "➥ Beneficiario",
-					propietario: "",
-					rut_propietario: "",
-					titular: bene.nombre || "-",
-					rut_titular: bene.rut || "-",
-					cuenta_banco: bene.numero_cuenta || "-",
-					porcentaje_propietario: "-",
+					tipo: '➥ Beneficiario',
+					propietario: '',
+					rut_propietario: '',
+					titular: bene.nombre || '-',
+					rut_titular: bene.rut || '-',
+					cuenta_banco: bene.numero_cuenta || '-',
+					porcentaje_propietario: '-',
 					porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
 					value="${bene.porcentaje}" 
 					data-id="${bene.id_propietario}" 
 					data-beneficiario-id="${bene.id}"  
 					min="0" max="100" step="0.01">`,
-					acciones: ""
+					acciones: '',
 				});
 			}
 		});
@@ -4409,28 +4415,26 @@ function combinarDatos(data) {
 	return filas;
 }
 
-
-
 // 🔹 Validación de porcentajes en tiempo real
 function asignarEventosValidacion() {
-	$(".porcentaje-propietario").on("input", validarTotalPorcentajes);
-	$(".porcentaje-beneficiario").on("input", validarBeneficiarios);
+	$('.porcentaje-propietario').on('input', validarTotalPorcentajes);
+	$('.porcentaje-beneficiario').on('input', validarBeneficiarios);
 }
 
 // 🔹 Validar que los propietarios sumen exactamente 100%
 function validarTotalPorcentajes() {
 	let total = 0;
 
-	$(".porcentaje-propietario").each(function () {
+	$('.porcentaje-propietario').each(function () {
 		total += parseFloat($(this).val()) || 0;
 	});
 
-	$("#current-sum").text(total.toFixed(2));
+	$('#current-sum').text(total.toFixed(2));
 
 	if (total !== 100) {
-		$("#alertAvisoPorcentajeTotal").show();
+		$('#alertAvisoPorcentajeTotal').show();
 	} else {
-		$("#alertAvisoPorcentajeTotal").hide();
+		$('#alertAvisoPorcentajeTotal').hide();
 	}
 }
 
@@ -4438,8 +4442,8 @@ function validarTotalPorcentajes() {
 function validarBeneficiarios() {
 	let propietarios = {};
 
-	$(".porcentaje-beneficiario").each(function () {
-		let idPropietario = $(this).data("id");
+	$('.porcentaje-beneficiario').each(function () {
+		let idPropietario = $(this).data('id');
 		let valor = parseFloat($(this).val()) || 0;
 
 		if (!propietarios[idPropietario]) {
@@ -4452,9 +4456,9 @@ function validarBeneficiarios() {
 	for (let id in propietarios) {
 		if (propietarios[id] > 100) {
 			Swal.fire({
-				title: "Atención",
+				title: 'Atención',
 				text: `Los beneficiarios del propietario ID ${id} superan el 100%. Ajuste los porcentajes.`,
-				icon: "warning",
+				icon: 'warning',
 			});
 
 			$(event.target).val(0);
@@ -4463,28 +4467,12 @@ function validarBeneficiarios() {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function eliminarInfoCoPropietario({
 	idRegistro = null,
 	idPropiedad,
 	idPropietario,
 	tokenBeneficiario = null,
 }) {
-
 	Swal.fire({
 		title: '¿Estás seguro?',
 		text: 'Una vez eliminado, no podrás recuperar este propietario',
@@ -4711,25 +4699,6 @@ function calculateSumPorcBase() {
 	return sum;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Guarda los porcentajes actualizados tanto de los propietarios como beneficiarios
 // function guardarCoPropietarioPorcentaje() {
 //     let formData = new FormData(document.getElementById('copropietario_porcentaje'));
@@ -4823,8 +4792,6 @@ function calculateSumPorcBase() {
 
 //     cargarInfoCoPropietarios();
 // }
-
-
 
 // Guarda los porcentajes actualizados tanto de los propietarios como beneficiarios
 // function guardarCoPropietarioPorcentaje() {
@@ -4935,13 +4902,15 @@ function calculateSumPorcBase() {
 function guardarCoPropietarioPorcentaje() {
 	let formData = new URLSearchParams();
 
-	var jsonInformacionNueva = obtenerValoresFormulario('copropietario_porcentaje');
+	var jsonInformacionNueva = obtenerValoresFormulario(
+		'copropietario_porcentaje'
+	);
 
-	console.log("🚀 Iniciando captura de datos...");
+	console.log('🚀 Iniciando captura de datos...');
 
 	// 🔹 Capturar inputs de propietarios y mostrar alertas
-	$(".porcentaje-propietario").each(function () {
-		let id = $(this).data("id") || "SIN_ID";
+	$('.porcentaje-propietario').each(function () {
+		let id = $(this).data('id') || 'SIN_ID';
 		let valor = parseFloat($(this).val()) || 0;
 
 		alert(`Propietario Capturado: ID=${id}, Valor=${valor}`);
@@ -4951,20 +4920,24 @@ function guardarCoPropietarioPorcentaje() {
 	});
 
 	// 🔹 Capturar inputs de beneficiarios y mostrar alertas
-	$(".porcentaje-beneficiario").each(function () {
-		let idPropietario = $(this).data("id") || "SIN_ID";
-		let idBeneficiario = $(this).attr("name") || "SIN_NAME";
+	$('.porcentaje-beneficiario').each(function () {
+		let idPropietario = $(this).data('id') || 'SIN_ID';
+		let idBeneficiario = $(this).attr('name') || 'SIN_NAME';
 		let valor = parseFloat($(this).val()) || 0;
 
-		alert(`Beneficiario Capturado: Propietario ID=${idPropietario}, Beneficiario ID=${idBeneficiario}, Valor=${valor}`);
-		console.log(`✅ Beneficiario - Propietario ID: ${idPropietario}, Beneficiario ID: ${idBeneficiario}, Valor: ${valor}`);
+		alert(
+			`Beneficiario Capturado: Propietario ID=${idPropietario}, Beneficiario ID=${idBeneficiario}, Valor=${valor}`
+		);
+		console.log(
+			`✅ Beneficiario - Propietario ID: ${idPropietario}, Beneficiario ID: ${idBeneficiario}, Valor: ${valor}`
+		);
 
 		formData.append(`${idPropietario}||porc_part||${idBeneficiario}|`, valor);
 	});
 
 	// 🔹 Validar que la suma de propietarios sea 100%
 	let totalPropietarios = 0;
-	$(".porcentaje-propietario").each(function () {
+	$('.porcentaje-propietario').each(function () {
 		totalPropietarios += parseFloat($(this).val()) || 0;
 	});
 
@@ -4980,8 +4953,8 @@ function guardarCoPropietarioPorcentaje() {
 	// 🔹 Validar que CADA propietario tenga beneficiarios que sumen máximo 100%
 	let propietarios = {};
 
-	$(".porcentaje-beneficiario").each(function () {
-		let idPropietario = $(this).data("id");
+	$('.porcentaje-beneficiario').each(function () {
+		let idPropietario = $(this).data('id');
 		let valor = parseFloat($(this).val()) || 0;
 
 		if (!propietarios[idPropietario]) {
@@ -5004,7 +4977,7 @@ function guardarCoPropietarioPorcentaje() {
 
 	// 🔹 Enviar los datos al servidor y mostrar alerta con los datos enviados
 	alert(`Enviando datos al servidor: ${formData.toString()}`);
-	console.log("🚀 Datos enviados al PHP:", formData.toString());
+	console.log('🚀 Datos enviados al PHP:', formData.toString());
 
 	var id_ficha = $('#ficha_tecnica').val();
 	var url = window.location.href;
@@ -5019,12 +4992,12 @@ function guardarCoPropietarioPorcentaje() {
 		dataType: 'text',
 		data: formData.toString(),
 		cache: false,
-		contentType: "application/x-www-form-urlencoded",
+		contentType: 'application/x-www-form-urlencoded',
 		processData: false,
 	})
 		.done(function (res) {
 			alert(`Respuesta del servidor: ${res}`);
-			console.log("✅ Respuesta del servidor:", res);
+			console.log('✅ Respuesta del servidor:', res);
 			Swal.fire({
 				title: 'Porcentajes de Participación Actualizados',
 				text: 'Los porcentajes de participación se actualizaron correctamente',
@@ -5034,7 +5007,7 @@ function guardarCoPropietarioPorcentaje() {
 		})
 		.fail(function (jqXHR, textStatus, errorThrown) {
 			alert(`Error en la petición: ${textStatus} - ${errorThrown}`);
-			console.error("❌ Error en la solicitud:", textStatus, errorThrown);
+			console.error('❌ Error en la solicitud:', textStatus, errorThrown);
 			Swal.fire({
 				title: 'Atención',
 				text: 'Los porcentajes de participación no se registraron',
@@ -5044,23 +5017,6 @@ function guardarCoPropietarioPorcentaje() {
 
 	cargarInfoCoPropietarios();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function calculateSum() {
 	const inputs = document.querySelectorAll('.porcentaje_participacion');
@@ -5076,18 +5032,7 @@ function calculateSum() {
 	// document.getElementById('sumResult').innerHTML = 'Total: ' + sum.toFixed(1);
 
 	return sum;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 // function busquedaDNIProp() {
 // 	// Realizar la solicitud AJAX para obtener los datos
@@ -5125,7 +5070,7 @@ function calculateSum() {
 // 		success: function (resp) {
 // 			/*
 // 		}).done(function (res) {
-// 		console.log(res);  
+// 		console.log(res);
 // 		  var retorno = res.split("||");
 // 		  var resultado = retorno[1];
 // 		  var mensaje = retorno[2];
@@ -5225,10 +5170,6 @@ function calculateSum() {
 // 	});
 // }
 
-
-
-
-
 function busquedaDNIProp() {
 	var dni = $('#DNIProp').val();
 
@@ -5253,7 +5194,7 @@ function busquedaDNIProp() {
 				Swal.fire({
 					title: 'No encontrado',
 					text: 'Este RUT no corresponde a ningún propietario registrado.',
-					icon: 'warning'
+					icon: 'warning',
 				});
 				return;
 			}
@@ -5265,9 +5206,14 @@ function busquedaDNIProp() {
 			cargarInfoPersonalPropietarios(propietario);
 		},
 		error: function (jqXHR, textStatus, errorThrown) {
-			console.error('Error en la búsqueda del propietario:', jqXHR, textStatus, errorThrown);
-			Swal.fire("Error", "Hubo un problema al buscar el RUT.", "error");
-		}
+			console.error(
+				'Error en la búsqueda del propietario:',
+				jqXHR,
+				textStatus,
+				errorThrown
+			);
+			Swal.fire('Error', 'Hubo un problema al buscar el RUT.', 'error');
+		},
 	});
 }
 
@@ -5275,67 +5221,44 @@ function cargarInfoPersonalPropietarios(propietario) {
 	console.log('Llenando formulario con:', propietario);
 
 	// 🔹 Ocultar secciones inicialmente
-	$("#section-info-cliente-natural").hide();
-	$("#section-info-cliente-juridico").hide();
-	$("#section-info-cta-bancaria").hide();
+	$('#section-info-cliente-natural').hide();
+	$('#section-info-cliente-juridico').hide();
+	$('#section-info-cta-bancaria').hide();
 
 	// 🔹 Llenar datos generales
-	$("#nombrePersona").text(propietario.nombre_completo || "-");
-	$("#telefonoMovilPersona").text(propietario.telefono || "-");
-	$("#emailPersona").text(propietario.correo_electronico || "-");
-	$("#direccionPersona").text(propietario.direccion || "-");
-	$("#linkMaps").attr("href", propietario.ubicacion || "#");
+	$('#nombrePersona').text(propietario.nombre_completo || '-');
+	$('#telefonoMovilPersona').text(propietario.telefono || '-');
+	$('#emailPersona').text(propietario.correo_electronico || '-');
+	$('#direccionPersona').text(propietario.direccion || '-');
+	$('#linkMaps').attr('href', propietario.ubicacion || '#');
 
-
-	$("#suggested_cta_banc").val(propietario.id_cta_bancaria);
-	$("#idPropietarioNuevo").val(propietario.id_persna);
-
-
-
-
+	$('#suggested_cta_banc').val(propietario.id_cta_bancaria);
+	$('#idPropietarioNuevo').val(propietario.id_persna);
 
 	// 🔹 Determinar el tipo de persona y mostrar la sección correspondiente
-	if (propietario.id_tipo_persona == 1) {  // NATURAL
-		$("#section-info-cliente-natural").show();
-		$("#tipoPersona").text("Natural");
-	} else if (propietario.id_tipo_persona == 2) {  // JURÍDICA
-		$("#section-info-cliente-juridico").show();
-		$("#razonPersonaJuridica").text(propietario.razon_social || "-");
-		$("#tipoPersonaJuridica").text("Jurídica");
+	if (propietario.id_tipo_persona == 1) {
+		// NATURAL
+		$('#section-info-cliente-natural').show();
+		$('#tipoPersona').text('Natural');
+	} else if (propietario.id_tipo_persona == 2) {
+		// JURÍDICA
+		$('#section-info-cliente-juridico').show();
+		$('#razonPersonaJuridica').text(propietario.razon_social || '-');
+		$('#tipoPersonaJuridica').text('Jurídica');
 	}
 
 	// 🔹 Llenar información bancaria si está disponible
 	if (propietario.cuenta_numero) {
-		$("#section-info-cta-bancaria").show();
-		$("#ctaBancNombreTitular").text(propietario.cuenta_nombre_titular || "-");
-		$("#ctaBancRutTitular").text(propietario.cuenta_rut_titular || "-");
-		$("#ctaBancNumero").text(propietario.cuenta_numero || "-");
+		$('#section-info-cta-bancaria').show();
+		$('#ctaBancNombreTitular').text(propietario.cuenta_nombre_titular || '-');
+		$('#ctaBancRutTitular').text(propietario.cuenta_rut_titular || '-');
+		$('#ctaBancNumero').text(propietario.cuenta_numero || '-');
 	}
 
 	// 🔹 Mostrar formulario y botón "Añadir"
-	$("#formulario-propietario").show();
-	$("#agregar_coprop").show();
+	$('#formulario-propietario').show();
+	$('#agregar_coprop').show();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*MÉTODOS INFORMACIÓN PROPIETARIO BUSCADO */
 function cargarInfoPersonalProp(infoJSON) {
@@ -5345,24 +5268,24 @@ function cargarInfoPersonalProp(infoJSON) {
 	if (infoJSON[0].tipo_persona === 'NATURAL') {
 		$('#nombrePersona').text(
 			infoJSON[0].nombres +
-			' ' +
-			infoJSON[0].apellido_paterno +
-			' ' +
-			infoJSON[0].apellido_materno
+				' ' +
+				infoJSON[0].apellido_paterno +
+				' ' +
+				infoJSON[0].apellido_materno
 		);
 		$('#telefonoMovilPersona').text(infoJSON[0].telefono_fijo);
 		$('#emailPersona').text(infoJSON[0].correo_electronico);
 		$('#tipoPersona').text(infoJSON[0].tipo_persona);
 		$('#direccionPersona').text(
 			infoJSON[0].direccion +
-			' #' +
-			infoJSON[0].numero +
-			', ' +
-			infoJSON[0].comuna +
-			', ' +
-			infoJSON[0].region +
-			', ' +
-			infoJSON[0].pais
+				' #' +
+				infoJSON[0].numero +
+				', ' +
+				infoJSON[0].comuna +
+				', ' +
+				infoJSON[0].region +
+				', ' +
+				infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -5387,14 +5310,14 @@ function cargarInfoPersonalProp(infoJSON) {
 		$('#tipoPersonaJuridica').text(infoJSON[0].tipo_persona);
 		$('#direccionPersonaJuridica').text(
 			infoJSON[0].direccion +
-			' #' +
-			infoJSON[0].numero +
-			', ' +
-			infoJSON[0].comuna +
-			', ' +
-			infoJSON[0].region +
-			', ' +
-			infoJSON[0].pais
+				' #' +
+				infoJSON[0].numero +
+				', ' +
+				infoJSON[0].comuna +
+				', ' +
+				infoJSON[0].region +
+				', ' +
+				infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -5415,10 +5338,10 @@ function cargarInfoPersonalProp(infoJSON) {
 
 	$('#ctaBancNombreTitularDeCuenta').text(
 		infoJSON[0].nombre_titular +
-		' ' +
-		infoJSON[0].apellido_paterno +
-		' ' +
-		infoJSON[0].apellido_materno
+			' ' +
+			infoJSON[0].apellido_paterno +
+			' ' +
+			infoJSON[0].apellido_materno
 	);
 	$('#ctaBancRutTitular').text(infoJSON[0].rut_titular);
 	$('#ctaBancNumero').text(infoJSON[0].numero_cta_banc);
@@ -5825,7 +5748,7 @@ function guardarInfoBeneficiario() {
 function buscarClienteAutocompleteGenerica(valor, tipo) {
 	var codigo = document.getElementById(tipo).value;
 
-	codigo = codigo.replace(/\./g, "");
+	codigo = codigo.replace(/\./g, '');
 
 	var caracteres = codigo.length;
 	//Si por lo menos ha ingresado 3 caracteres comenzamos a autocompletar
@@ -6018,8 +5941,8 @@ function cargarInfoCtaServicios() {
 					newRow.append('<td>' + formateoNulos(item.nombre_servicio) + '</td>');
 					newRow.append(
 						'<td>' +
-						formateoNulos(formateoDivisa(item.monto_adeudado)) +
-						'</td>'
+							formateoNulos(formateoDivisa(item.monto_adeudado)) +
+							'</td>'
 					);
 					newRow.append(
 						`<td>
@@ -6391,8 +6314,8 @@ function cargarInfoCoPropietariosPropiedad() {
 						newRow.append('<td>' + formateoNulos(item.cuenta_banco) + '</td>');
 						newRow.append(
 							'<td>' +
-							formateoNulos(item.porcentaje_participacion_base) +
-							'</td>'
+								formateoNulos(item.porcentaje_participacion_base) +
+								'</td>'
 						);
 						newRow.append(
 							'<td>' + formateoNulos(item.porcentaje_participacion) + '</td>'
@@ -6415,8 +6338,8 @@ function cargarInfoCoPropietariosPropiedad() {
 						newRow.append('<td>' + formateoNulos(item.cuenta_banco) + '</td>');
 						newRow.append(
 							'<td>' +
-							formateoNulos(item.porcentaje_participacion_base) +
-							'</td>'
+								formateoNulos(item.porcentaje_participacion_base) +
+								'</td>'
 						);
 						newRow.append(
 							'<td>' + formateoNulos(item.porcentaje_participacion) + '</td>'
@@ -6478,8 +6401,8 @@ function cargarLiquidaciones() {
 					newRow.append('<td>' + replaceNull(item.id_ficha_arriendo) + '</td>');
 					newRow.append(
 						'<td>$' +
-						replaceNull(item.comision).toLocaleString('es-ES') +
-						'</td>'
+							replaceNull(item.comision).toLocaleString('es-ES') +
+							'</td>'
 					);
 					newRow.append(
 						'<td>$' + replaceNull(item.iva).toLocaleString('es-ES') + '</td>'
@@ -6489,8 +6412,8 @@ function cargarLiquidaciones() {
 					);
 					newRow.append(
 						'<td>$' +
-						replaceNull(item.descuentos).toLocaleString('es-ES') +
-						'</td>'
+							replaceNull(item.descuentos).toLocaleString('es-ES') +
+							'</td>'
 					);
 					newRow.append(
 						'<td>$' + replaceNull(item.total).toLocaleString('es-ES') + '</td>'
@@ -7100,14 +7023,7 @@ function toggleButtonState() {
 	document.getElementById('eliminar-moras').disabled = !isChecked;
 }
 
-
-
-
-
-
-
-
-// jhernandez 
+// jhernandez
 function cargarLiquidacionesGenMasivaList() {
 	// Mostrar el mensaje de carga con SweetAlert
 	Swal.fire({
@@ -7116,7 +7032,7 @@ function cargarLiquidacionesGenMasivaList() {
 		allowOutsideClick: false,
 		didOpen: () => {
 			Swal.showLoading();
-		}
+		},
 	});
 
 	$.ajax({
@@ -7153,9 +7069,9 @@ function cargarLiquidacionesGenMasivaList() {
 				var montoFormateado = isNaN(precioNumerico)
 					? 'No definido'
 					: new Intl.NumberFormat('es-CL', {
-						style: 'currency',
-						currency: 'CLP',
-					}).format(precioNumerico);
+							style: 'currency',
+							currency: 'CLP',
+					  }).format(precioNumerico);
 
 				if (idPropiedad !== 'Sin dato' && idContrato !== 'Sin dato') {
 					tableBody.append(`
@@ -7204,14 +7120,6 @@ function cargarLiquidacionesGenMasivaList() {
 	});
 }
 
-
-
-
-
-
-
-
-
 function habilitarTodos() {
 	$('#liq-generacion-masiva-table tbody input[type="checkbox"]').prop(
 		'checked',
@@ -7226,29 +7134,16 @@ function deshabilitarTodos() {
 	);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // jhernandez
 function GenerarLiquidaciones() {
 	let contratosSeleccionados = [];
 
 	// Recolectar los IDs seleccionados desde los checkboxes marcados
-	$('#liq-generacion-masiva-table tbody input[type="checkbox"]:checked').each(function () {
-		contratosSeleccionados.push($(this).val());
-	});
+	$('#liq-generacion-masiva-table tbody input[type="checkbox"]:checked').each(
+		function () {
+			contratosSeleccionados.push($(this).val());
+		}
+	);
 
 	if (contratosSeleccionados.length === 0) {
 		Swal.fire('Por favor selecciona al menos un contrato.');
@@ -7290,21 +7185,6 @@ function GenerarLiquidaciones() {
 		location.reload();
 	}, 1000);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // jhernandez
 function cargarLiquidacionesPagoPropietariosList() {
@@ -7386,7 +7266,7 @@ function cargarLiquidacionesPagoPropietariosList() {
 		},
 	});
 
-	$('#prop-liq-pago-propietarios-table').on('init.dt', function () { });
+	$('#prop-liq-pago-propietarios-table').on('init.dt', function () {});
 }
 
 function deselectAll() {
@@ -7526,7 +7406,7 @@ function cargarLiquidacionesHistorico() {
 			},
 		},
 	});
-	$('#liq-generacion-masiva-table').on('init.dt', function () { });
+	$('#liq-generacion-masiva-table').on('init.dt', function () {});
 	$('[data-toggle="tooltip"]').tooltip();
 }
 
@@ -7631,10 +7511,13 @@ $(document).ready(function () {
 				  <td>
 					<div class="d-flex">
 					  <label class="switch"> 
-						<input value="1" type="checkbox" id="rolActivoCobrado_${item.id
-						}" name="cobrado_${item.id}" ${item.cobrado ? 'checked' : ''
-						} onclick="confirmarCambioEstado(${item.id
-						}, 'cobrado', this.checked)">
+						<input value="1" type="checkbox" id="rolActivoCobrado_${
+							item.id
+						}" name="cobrado_${item.id}" ${
+						item.cobrado ? 'checked' : ''
+					} onclick="confirmarCambioEstado(${
+						item.id
+					}, 'cobrado', this.checked)">
 						<span class="slider round"></span>
 					  </label>
 					</div> 
@@ -7642,17 +7525,21 @@ $(document).ready(function () {
 				  <td>
 					<div class="d-flex">
 					  <label class="switch">
-						<input value="1" type="checkbox" id="rolActivoPagado_${item.id}" name="pagado_${item.id
-						}" ${item.pagado ? 'checked' : ''} onclick="confirmarCambioEstado(${item.id
-						}, 'pagado', this.checked)">
+						<input value="1" type="checkbox" id="rolActivoPagado_${item.id}" name="pagado_${
+						item.id
+					}" ${item.pagado ? 'checked' : ''} onclick="confirmarCambioEstado(${
+						item.id
+					}, 'pagado', this.checked)">
 						<span class="slider round"></span>
 					  </label>
 					</div>
 				  </td>
 				  <td>
-					<button class="btn btn-info editar-btn me-2" data-bs-toggle="modal" data-bs-target="#ModalEditarValor" data-id="${item.id
-						}" data-año="${item.año}" data-valor="${item.valor}" data-cuota="${item.cuota
-						}" data-mes="${item.mes}">
+					<button class="btn btn-info editar-btn me-2" data-bs-toggle="modal" data-bs-target="#ModalEditarValor" data-id="${
+						item.id
+					}" data-año="${item.año}" data-valor="${item.valor}" data-cuota="${
+						item.cuota
+					}" data-mes="${item.mes}">
 					  <i class="fa-solid fa-pen-to-square"></i>
 					</button>
 					<button class="btn btn-danger eliminar-btn-valores me-2" data-id="${item.id}">
@@ -7830,17 +7717,23 @@ $(document).ready(function () {
                 <tr>
                   <td>${item.numero}</td>
                   <td>${item.principal}</td>
-                  <td>${item.descripcion
-						}</td> <!-- Nueva celda para la descripción -->
+                  <td>${
+										item.descripcion
+									}</td> <!-- Nueva celda para la descripción -->
                   <td>
                     <div class="d-flex gap-2">
-                      <button class="btn btn-success pasar-id-btn" data-token="${item.token_rol
-						}" data-id-rol="${item.id_propiedades_roles
-						}" data-bs-toggle="modal" data-bs-target="#ModalDetalle"><i class="fa-regular fa-eye"></i></button>
-                      <button class="btn btn-info editar-btn" data-bs-toggle="modal" data-bs-target="#modalRolEditar" data-propiedad="${item.id_propiedad
-						}" data-id="${item.id}" data-numero="${item.numero
-						}" data-principal="${item.principal}" data-token-rol="${item.token_rol
-						}"> <i class="fa-solid fa-pen-to-square"></i></button>
+                      <button class="btn btn-success pasar-id-btn" data-token="${
+												item.token_rol
+											}" data-id-rol="${
+						item.id_propiedades_roles
+					}" data-bs-toggle="modal" data-bs-target="#ModalDetalle"><i class="fa-regular fa-eye"></i></button>
+                      <button class="btn btn-info editar-btn" data-bs-toggle="modal" data-bs-target="#modalRolEditar" data-propiedad="${
+												item.id_propiedad
+											}" data-id="${item.id}" data-numero="${
+						item.numero
+					}" data-principal="${item.principal}" data-token-rol="${
+						item.token_rol
+					}"> <i class="fa-solid fa-pen-to-square"></i></button>
                       ${item.principal === 'No' ? botonBorrar : ''}
                     </div>
                   </td>
@@ -8841,23 +8734,6 @@ function GrabarValorRol() {
 	});
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // jhernandez funcion para listar los tipos de movimientos de cuentas corrientes cargos.
 // function CargarSelectTipoMovimientosCC() {
 // 	// Realizar la solicitud AJAX
@@ -8905,7 +8781,6 @@ function GrabarValorRol() {
 // 		},
 // 	});
 // }
-
 
 // function CargarSelectTipoMovimientosCCAbono() {
 // 	$.ajax({
@@ -8957,10 +8832,6 @@ function GrabarValorRol() {
 // 	});
 // }
 
-
-
-
-
 // jhernandez funcion para listar los tipos de movimientos de cuentas corrientes cargos.
 function CargarSelectTipoMovimientosCC() {
 	// Realizar la solicitud AJAX
@@ -8998,7 +8869,9 @@ function CargarSelectTipoMovimientosCC() {
 
 			// Asignar manejador al evento change
 			select.off('change').on('change', function () {
-				const id_responsable_cargo = $(this).find(':selected').data('idresponsablecargo');
+				const id_responsable_cargo = $(this)
+					.find(':selected')
+					.data('idresponsablecargo');
 				$('#idResponsableCargo').val(id_responsable_cargo);
 
 				const cta_corriente = $(this).find(':selected').data('ctacorriente');
@@ -9012,7 +8885,6 @@ function CargarSelectTipoMovimientosCC() {
 	});
 }
 
-
 // jhernandez funcion para listar los tipos de movimientos de cuentas corrientes abonos.
 function CargarSelectTipoMovimientosCCAbono() {
 	$.ajax({
@@ -9020,7 +8892,6 @@ function CargarSelectTipoMovimientosCCAbono() {
 		method: 'GET',
 		dataType: 'json',
 		success: function (data) {
-
 			// Ordenar los datos por descripción
 			data.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
 
@@ -9058,7 +8929,6 @@ function CargarSelectTipoMovimientosCCAbono() {
 
 				const cta_corriente = selectedOption.data('cta_corriente');
 				$('#ctacorrienteAbono').val(cta_corriente || '');
-
 			});
 		},
 		error: function (xhr, status, error) {
@@ -9067,33 +8937,7 @@ function CargarSelectTipoMovimientosCCAbono() {
 	});
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // end jose
-
 
 //bruno
 function ListadoNotificaciones() {
