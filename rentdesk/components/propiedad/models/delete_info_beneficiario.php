@@ -16,7 +16,6 @@ $queryUpdateInfoComentario = "UPDATE propiedades.persona_beneficiario SET habili
 $dataCab = array("consulta" => $queryUpdateInfoComentario);
 $resultadoCab = $services->sendPostDirecto($url_services . '/util/dml', $dataCab);
 
-echo $queryUpdateInfoComentario;
 
 if ($resultadoCab) {
     echo "true";

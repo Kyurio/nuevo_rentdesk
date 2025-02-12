@@ -20,10 +20,9 @@ if (!isset($_POST["token"])) {
 
 $token = $_POST["token"];
 
-
 // Obtener ID de propiedad desde el token
 $queryIdPropiedad = "SELECT id FROM propiedades.propiedad WHERE token = '$token'";
-$data = array("consulta" => $queryIdPropiedad);
+$data = ["consulta" => $queryIdPropiedad];
 $resultado = $services->sendPostNoToken($url_services . '/util/objeto', $data);
 $objIdPropiedad = json_decode($resultado)[0] ?? null;
 
@@ -34,16 +33,22 @@ if (!$objIdPropiedad) {
 }
 
 $idPropiedad = $objIdPropiedad->id;
-
-// Array para almacenar las consultas correctamente
 $consultas = [];
 
 foreach ($_POST as $key => $value) {
+    $key = rtrim($key, "|"); // 🔹 Normalizar clave
+
     if (strpos($key, "||") !== false) {
         $parts = explode("||", $key);
+        $tipo = $parts[1]; // Usamos solo el tipo como validación
 
-        if (count($parts) === 3 && $parts[1] === "porc_part_base") {
-            // Actualización de porcentaje de participación base (copropietario)
+        echo "Procesando: ";
+        var_dump($parts);
+        echo "<br>";
+
+        // 🔹 Actualización de propietarios (% de participación base)
+        if ($tipo === "porc_part_base") {
+            echo "✔ Actualizando porc_part_base<br>";
             $idPropietario = intval($parts[0]);
             $porcentaje = floatval($value);
 
@@ -52,30 +57,38 @@ foreach ($_POST as $key => $value) {
                             WHERE id_propiedad = $idPropiedad 
                             AND id_propietario = $idPropietario 
                             AND habilitado = true";
-        } elseif (count($parts) === 4 && $parts[1] === "porc_part") {
-            // Actualización de porcentaje de participación de beneficiario
-            $idPropietario = intval($parts[0]);
-            $idBeneficiario = intval($parts[2]);
-            $porcentaje = floatval($value);
+        } 
 
-            $consultas[] = "UPDATE propiedades.propiedad_copropietarios 
-                            SET porcentaje_participacion = $porcentaje 
-                            WHERE id_propiedad = $idPropiedad 
-                            AND id_propietario = $idPropietario 
-                            AND id_beneficiario = $idBeneficiario 
-                            AND habilitado = true";
+        // 🔹 Actualización de beneficiarios (% de participación)
+        elseif ($tipo === "porc_part" && is_array($value)) {
+            foreach ($value as $idBeneficiario => $porcentaje) {
+                echo "✔ Actualizando porc_part - Beneficiario ID $idBeneficiario<br>";
+
+                $idPropietario = intval($parts[0]);
+                $idBeneficiario = intval($idBeneficiario);
+                $porcentaje = floatval($porcentaje);
+
+                $consultas[] = "UPDATE propiedades.persona_beneficiario 
+                                SET porcentaje_participacion = $porcentaje 
+                                WHERE id_propiedad = $idPropiedad 
+                                AND id_propietario = $idPropietario 
+                                AND id = $idBeneficiario 
+                                AND habilitado = true";
+            }
+        } else {
+            echo "⚠ No entró en ninguna condición, valores recibidos:<br>";
+            var_dump($parts);
+            echo "<br>";
         }
     }
 }
 
-// Ejecutar todas las consultas una por una
+// 🔹 Ejecutar todas las consultas SQL generadas
 foreach ($consultas as $query) {
-
-    echo $query;
-    echo "_____________________";
-
+    echo "<br>Ejecutando consulta:<br>$query<br>";
     $services->sendPostDirecto($url_services . '/util/dml', ["consulta" => $query]);
 }
 
-// Enviar respuesta de éxito
+// 🔹 Enviar respuesta final
 echo json_encode(["mensaje" => "Porcentajes actualizados correctamente"]);
+?>

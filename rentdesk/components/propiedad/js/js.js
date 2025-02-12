@@ -826,8 +826,8 @@ function cargarDocumentosSoloLectura() {
 					if (item.token_agrupador != previousId) {
 						newRow.append(
 							"<td><div class='d-flex align-items-center' style='gap: .5rem;'><label style='font-size: 1em; text-align: center; color: black;'>" +
-								item.titulo +
-								'</label></div></td>'
+							item.titulo +
+							'</label></div></td>'
 						);
 						previousId = item.token_agrupador;
 					} else {
@@ -836,8 +836,8 @@ function cargarDocumentosSoloLectura() {
 					if (item.nombre_archivo != null && item.nombre_archivo != '') {
 						newRow.append(
 							"<td><i class='fa-solid fa-chevron-right'></i> " +
-								item.nombre_archivo +
-								'</td>'
+							item.nombre_archivo +
+							'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -851,8 +851,8 @@ function cargarDocumentosSoloLectura() {
 					) {
 						newRow.append(
 							'<td>' +
-								moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-								'</td>'
+							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+							'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -861,8 +861,8 @@ function cargarDocumentosSoloLectura() {
 					//console.log(item.link);
 					newRow.append(
 						"<td><div class='d-flex' style='gap: .5rem;'><a href='" +
-							item.link +
-							"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
+						item.link +
+						"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
 					);
 					if (
 						item.fecha_ultima_actualizacion != null &&
@@ -870,12 +870,12 @@ function cargarDocumentosSoloLectura() {
 					) {
 						newRow.append(
 							'<td>' +
-								(item.fecha_ultima_actualizacion
-									? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
-									: '-') +
-								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-								item.nombre_usuario +
-								"'></i></td>"
+							(item.fecha_ultima_actualizacion
+								? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
+								: '-') +
+							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+							item.nombre_usuario +
+							"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -1012,10 +1012,10 @@ function cargarInfoComentario() {
 					) {
 						newRow.append(
 							'<td>' +
-								formateoNulos(item.fecha_comentario) +
-								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-								item.nombre_usuario +
-								"'></i></td>"
+							formateoNulos(item.fecha_comentario) +
+							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+							item.nombre_usuario +
+							"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -1989,10 +1989,10 @@ function cargarInfoComentario() {
 					) {
 						newRow.append(
 							'<td>' +
-								formateoNulos(item.fecha_comentario) +
-								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-								item.nombre_usuario +
-								"'></i></td>"
+							formateoNulos(item.fecha_comentario) +
+							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+							item.nombre_usuario +
+							"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3210,10 +3210,10 @@ function cargarInfoPersonal(infoJSON) {
 	if (infoJSON[0].tipo_persona === 'NATURAL') {
 		$('#nombrePersona').text(
 			infoJSON[0].nombres +
-				' ' +
-				infoJSON[0].apellido_paterno +
-				' ' +
-				infoJSON[0].apellido_materno
+			' ' +
+			infoJSON[0].apellido_paterno +
+			' ' +
+			infoJSON[0].apellido_materno
 		);
 
 		$('#telefonoMovilPersona').text(
@@ -3223,14 +3223,14 @@ function cargarInfoPersonal(infoJSON) {
 		$('#tipoPersona').text(infoJSON[0].tipo_persona);
 		$('#direccionPersona').text(
 			infoJSON[0].direccion +
-				' #' +
-				infoJSON[0].numero +
-				', ' +
-				infoJSON[0].comuna +
-				', ' +
-				infoJSON[0].region +
-				', ' +
-				infoJSON[0].pais
+			' #' +
+			infoJSON[0].numero +
+			', ' +
+			infoJSON[0].comuna +
+			', ' +
+			infoJSON[0].region +
+			', ' +
+			infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -3255,14 +3255,14 @@ function cargarInfoPersonal(infoJSON) {
 		$('#tipoPersonaJuridica').text(infoJSON[0].tipo_persona);
 		$('#direccionPersonaJuridica').text(
 			infoJSON[0].direccion +
-				' #' +
-				infoJSON[0].numero +
-				', ' +
-				infoJSON[0].comuna +
-				', ' +
-				infoJSON[0].region +
-				', ' +
-				infoJSON[0].pais
+			' #' +
+			infoJSON[0].numero +
+			', ' +
+			infoJSON[0].comuna +
+			', ' +
+			infoJSON[0].region +
+			', ' +
+			infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -3527,12 +3527,12 @@ function cargarDocumentos() {
 					if (item.token_agrupador != previousId) {
 						newRow.append(
 							"<td><div class='d-flex align-items-center' style='gap: .5rem;'> <a data-bs-toggle='modal' data-bs-target='#modalTituloEditar' type='button' onclick='cargarTituloDocumentosEditar(\"" +
-								item.titulo +
-								'","' +
-								item.token_agrupador +
-								"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
-								item.titulo +
-								'</label></div></td>'
+							item.titulo +
+							'","' +
+							item.token_agrupador +
+							"\")' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='Editar' title='Editar'> <i class='fa-regular fa-pen-to-square' style='font-size: .75rem;'></i></a><label style='font-size: 1em; text-align: center; color: black;'>" +
+							item.titulo +
+							'</label></div></td>'
 						);
 						previousId = item.token_agrupador;
 					} else {
@@ -3541,8 +3541,8 @@ function cargarDocumentos() {
 					if (item.nombre_archivo != null && item.nombre_archivo != '') {
 						newRow.append(
 							"<td><i class='fa-solid fa-chevron-right'></i> " +
-								item.nombre_archivo +
-								'</td>'
+							item.nombre_archivo +
+							'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3556,8 +3556,8 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-								moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
-								'</td>'
+							moment(item.fecha_vencimiento).format('DD-MM-YYYY') +
+							'</td>'
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -3566,8 +3566,8 @@ function cargarDocumentos() {
 					//console.log(item.link);
 					newRow.append(
 						"<td><div class='d-flex' style='gap: .5rem;'><a href='" +
-							item.link +
-							"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
+						item.link +
+						"' download  type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' aria-label='documento' title='documento'><i class='fa-solid fa-file' style='font-size: .75rem;'></i></div></td>"
 					);
 					if (
 						item.fecha_ultima_actualizacion != null &&
@@ -3575,12 +3575,12 @@ function cargarDocumentos() {
 					) {
 						newRow.append(
 							'<td>' +
-								(item.fecha_ultima_actualizacion
-									? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
-									: '-') +
-								"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
-								item.nombre_usuario +
-								"'></i></td>"
+							(item.fecha_ultima_actualizacion
+								? moment(item.fecha_ultima_actualizacion).format('DD-MM-YYYY')
+								: '-') +
+							"  <i class='fa-solid fa-circle-info' data-bs-toggle='tooltip' data-bs-placement='top' title='Modificado por : " +
+							item.nombre_usuario +
+							"'></i></td>"
 						);
 					} else {
 						newRow.append('<td>-</td>');
@@ -4156,53 +4156,46 @@ function cargarInfoCoPropietarios() {
                                       <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
                                           title='Ingreso Beneficiario' data-bs-toggle="modal" 
                                           data-bs-target="#modalBeneficiarioIngreso" 
-                                          onclick="llenarIdPropietarioSeleccionado(${
-																						parentRow.id_propietario
-																					}, ${parentRow.id})">
+                                          onclick="llenarIdPropietarioSeleccionado(${parentRow.id_propietario
+							}, ${parentRow.id})">
                                           <i class='fa-regular fa-plus' style='font-size: .75rem;'></i>
                                       </button>
                                   </div>
                               </td>
                               <td>${formateoNulos(parentRow.nombre)}</td>
                               <td>${formateoNulos(
-																formatRutChile(parentRow.dni)
-															)}</td>
+								formatRutChile(parentRow.dni)
+							)}</td>
                               <td>${formateoNulos(
-																parentRow.nombre_titular
-															)}</td>
+								parentRow.nombre_titular
+							)}</td>
                               <td>${formateoNulos(
-																formatRutChile(parentRow.rut_titular)
-															)}</td>
+								formatRutChile(parentRow.rut_titular)
+							)}</td>
                               <td>${formateoNulos(parentRow.cuenta_banco)}</td>
                               <td><input type="number" class="porcentaje_participacion_base parent-input numeric-vacio" 
                                   id="porcentaje_participacion_base_${id_propietario}" 
-                                  name="${parentRow.id_propietario}|${
-							parentRow.id_cta_banc
-						}|porc_part_base||${parentRow?.id}" 
+                                  name="${parentRow.id_propietario}|${parentRow.id_cta_banc
+							}|porc_part_base||${parentRow?.id}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${
-																		parentRow.porcentaje_participacion_base
-																	}"></td>
+                                  value="${parentRow.porcentaje_participacion_base
+							}"></td>
                               <td><input disabled type="number" class="porcentaje_participacion numeric-vacio" 
                                   id="porcentaje_participacion_${id_propietario}" 
-                                  name="${parentRow.id_propietario}|${
-							parentRow.id_cta_banc
-						}|porc_part||${parentRow?.id}" 
+                                  name="${parentRow.id_propietario}|${parentRow.id_cta_banc
+							}|porc_part||${parentRow?.id}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${
-																		parentRow.porcentaje_participacion
-																	}"></td>
+                                  value="${parentRow.porcentaje_participacion
+							}"></td>
                               <td>
                                   <div id="eliminarParent">
                                       <div class='d-flex' style='gap: .5rem;'>
                                           <button onclick='eliminarInfoCoPropietario({
                                               idRegistro: ${parentRow.id},
-                                              idPropiedad: ${
-																								parentRow.id_propiedad
-																							},
-                                              idPropietario: ${
-																								parentRow.id_propietario
-																							}
+                                              idPropiedad: ${parentRow.id_propiedad
+							},
+                                              idPropietario: ${parentRow.id_propietario
+							}
                                           })' type='button' class='btn btn-danger m-0 d-flex' style='padding: .5rem;' title='Eliminar'>
                                               <i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
                                           </button>
@@ -4224,30 +4217,27 @@ function cargarInfoCoPropietarios() {
                               <td></td>
                               <td>${formateoNulos(child.nombre)}</td>
                               <td>${formateoNulos(
-																formatRutChile(child.dni)
-															)}</td>
+							formatRutChile(child.dni)
+						)}</td>
                               <td>${formateoNulos(child.nombre_titular)}</td>
                               <td>${formateoNulos(
-																formatRutChile(child.rut_titular)
-															)}</td>
+							formatRutChile(child.rut_titular)
+						)}</td>
                               <td>${formateoNulos(child.cuenta_banco)}</td>
                               <td>-</td>
                               <td><input type="number" class="porcentaje_participacion child-input numeric-vacio" 
                                   id="porcentaje_participacion_${id_propietario}_${index}" 
-                                  name="${child.id_propietario}||porc_part|${
-							child.id_beneficiario
-						}|${child?.id_relacion}" 
+                                  name="${child.id_propietario}||porc_part|${child.id_beneficiario
+							}|${child?.id_relacion}" 
                                   min="0" max="100" step="0.01" 
-                                  value="${
-																		child.porcentaje_participacion
-																	}"></td>
+                                  value="${child.porcentaje_participacion
+							}"></td>
                               <td>
                                   <div class='d-flex' style='gap: .5rem;'>
                                       <button onclick='eliminarInfoCoPropietario({
                                           idPropiedad: ${child.id_propiedad},
-                                          idPropietario: ${
-																						child.id_propietario
-																					},
+                                          idPropietario: ${child.id_propietario
+							},
                                           tokenBeneficiario: "${child.token}"
                                       })' type='button' class='btn btn-danger m-0 d-flex' style='padding: .5rem;' title='Eliminar'>
                                           <i class='fa-regular fa-trash-can' style='font-size: .75rem;'></i>
@@ -4327,10 +4317,7 @@ async function CargarInfoCopopieratioBeneficiario() {
 			return;
 		}
 
-		console.log("✅ Datos recibidos para la tabla:", data);
-
 		let formattedData = combinarDatos(data);
-		console.log("✅ Datos combinados para DataTable:", formattedData);
 
 		// 🔹 Limpiar y volver a cargar la tabla
 		if ($.fn.DataTable.isDataTable("#info-copropietarios")) {
@@ -4369,12 +4356,102 @@ async function CargarInfoCopopieratioBeneficiario() {
 
 
 // 🔹 Función para combinar datos de copropietarios y beneficiarios
-function combinarDatos(data) {
-	let filas = [];
+// function combinarDatos(data) {
+// 	let filas = [];
 
-	// 🔹 Recorremos cada copropietario
-	data.copropietarios.forEach((coprop) => {
-		let botonIngresoBeneficiario = `
+// 	// 🔹 Recorremos cada copropietario
+// 	data.copropietarios.forEach((coprop) => {
+// 		let botonIngresoBeneficiario = `
+//             <div class='d-flex' style='gap: .5rem;'>
+//                 <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
+//                     title='Ingreso Beneficiario' data-bs-toggle="modal" 
+//                     data-bs-target="#modalBeneficiarioIngreso" 
+//                     onclick="llenarIdPropietarioSeleccionado(${coprop.id_propietario}, ${coprop.id})">
+//                     <i class='fa-regular fa-plus' style='font-size: .75rem;'></i>
+//                 </button>
+//             </div>
+//         `;
+
+// 		// 🔹 Fila del copropietario
+// 		filas.push({
+// 			tipo: botonIngresoBeneficiario,
+// 			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
+// 			rut_propietario: coprop.rut_propietario || "-",
+// 			titular: "-",
+// 			rut_titular: "-",
+// 			cuenta_banco: "-",
+// 			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
+//                                       value="${coprop.porcentaje_participacion_base}" 
+//                                       data-id="${coprop.id_propietario}" 
+//                                       min="0" max="100" step="1">`,
+// 			porcentaje_beneficiario: "-",
+
+// 			acciones: `
+// 			<div class='d-flex' style='gap: .5rem;'>
+// 				<button onclick='eliminarInfoCoPropietario({
+// 					idRegistro: ${coprop.id},
+// 					idPropiedad: ${coprop.id_propiedad},
+// 					idPropietario: ${coprop.id_propietario}})' type='button' class='btn btn-secondary eliminar-copropietario' 
+// 				    title='Eliminar'>
+// 					<i class='fa-regular fa-trash-can'></i>
+// 				</button>
+// 			</div>
+// 		`
+
+// 		});
+
+// 		// 🔹 Beneficiarios del copropietario
+// 		data.beneficiarios.forEach((bene) => {
+// 			if (coprop.id_propietario === bene.id_propietario) {
+// 				filas.push({
+// 					tipo: "➥ Beneficiario",
+// 					propietario: "",
+// 					rut_propietario: "",
+// 					titular: bene.nombre || "-",
+// 					rut_titular: bene.rut || "-",
+// 					cuenta_banco: bene.numero_cuenta || "-",
+// 					porcentaje_propietario: "-",
+// 					porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
+// 												value="${bene.porcentaje_participacion}" 
+// 												data-id="${bene.id_propietario}" 
+// 												data-beneficiario-id="${bene.id}"  
+// 												name="porcentaje_beneficiario[${bene.id_beneficiario}]"
+// 												min="0" max="100" step="1">`,
+// 					acciones: `
+// 					<div class='d-flex' style='gap: .5rem;'>
+// 						<button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
+// 							type='button' class='btn btn-danger eliminar-copropietario' 
+// 							   title='Eliminar'>
+// 							<i class='fa-regular fa-trash-can'></i>
+// 						</button>
+// 					</div>
+// 				`
+// 				});
+// 			}
+// 		});
+// 	});
+
+// 	return filas;
+// }
+
+
+function combinarDatos(data) {
+    let filas = [];
+
+    // 🔹 Eliminar copropietarios duplicados (por id_propietario)
+    const copropietariosUnicos = [];
+    const idsVistos = new Set();
+
+    data.copropietarios.forEach((coprop) => {
+        if (!idsVistos.has(coprop.id_propietario)) {
+            idsVistos.add(coprop.id_propietario);
+            copropietariosUnicos.push(coprop);
+        }
+    });
+
+    // 🔹 Recorremos los copropietarios únicos
+    copropietariosUnicos.forEach((coprop) => {
+        let botonIngresoBeneficiario = `
             <div class='d-flex' style='gap: .5rem;'>
                 <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
                     title='Ingreso Beneficiario' data-bs-toggle="modal" 
@@ -4385,66 +4462,153 @@ function combinarDatos(data) {
             </div>
         `;
 
-		// 🔹 Fila del copropietario
-		filas.push({
-			tipo: botonIngresoBeneficiario,
-			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
-			rut_propietario: coprop.rut_propietario || "-",
-			titular: "-",
-			rut_titular: "-",
-			cuenta_banco: "-",
-			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
-                                      value="${coprop.porcentaje_participacion}" 
+        // 🔹 Fila del copropietario
+        filas.push({
+            tipo: botonIngresoBeneficiario,
+            propietario: coprop.nombre ? coprop.nombre.trim() : "-",
+            rut_propietario: coprop.rut_propietario || "-",
+            titular: "-",
+            rut_titular: "-",
+            cuenta_banco: "-",
+            porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
+                                      value="${coprop.porcentaje_participacion_base}" 
                                       data-id="${coprop.id_propietario}" 
                                       min="0" max="100" step="1">`,
-			porcentaje_beneficiario: "-",
+            porcentaje_beneficiario: "-",
+            acciones: `
+            <div class='d-flex' style='gap: .5rem;'>
+                <button onclick='eliminarInfoCoPropietario({
+                    idRegistro: ${coprop.id},
+                    idPropiedad: ${coprop.id_propiedad},
+                    idPropietario: ${coprop.id_propietario}})' type='button' class='btn btn-secondary eliminar-copropietario' 
+                    title='Eliminar'>
+                    <i class='fa-regular fa-trash-can'></i>
+                </button>
+            </div>
+        `
+        });
 
-			acciones: `
-			<div class='d-flex' style='gap: .5rem;'>
-				<button onclick='eliminarInfoCoPropietario({
-					idRegistro: ${coprop.id},
-					idPropiedad: ${coprop.id_propiedad},
-					idPropietario: ${coprop.id_propietario}
-				})' type='button' class='btn btn-secondary eliminar-copropietario' 
-				   title='Eliminar'>
-					<i class='fa-regular fa-trash-can'></i>
-				</button>
-			</div>
-		`
-		});
+        // 🔹 Filtrar beneficiarios que pertenecen a este copropietario
+        const beneficiariosDelCopropietario = data.beneficiarios.filter(bene => bene.id_propietario === coprop.id_propietario);
 
-		// 🔹 Beneficiarios del copropietario
-		data.beneficiarios.forEach((bene) => {
-			if (coprop.id_propietario === bene.id_propietario) {
-				filas.push({
-					tipo: "➥ Beneficiario",
-					propietario: "",
-					rut_propietario: "",
-					titular: bene.nombre || "-",
-					rut_titular: bene.rut || "-",
-					cuenta_banco: bene.numero_cuenta || "-",
-					porcentaje_propietario: "-",
-					porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
-					value="${bene.porcentaje}" 
-					data-id="${bene.id_propietario}" 
-					data-beneficiario-id="${bene.id}"  
-					min="0" max="100" step="1">`,
-					acciones: `
-					<div class='d-flex' style='gap: .5rem;'>
-						<button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
-							type='button' class='btn btn-danger eliminar-copropietario' 
-							   title='Eliminar'>
-							<i class='fa-regular fa-trash-can'></i>
-						</button>
-					</div>
-				`
-				});
-			}
-		});
-	});
+        // 🔹 Agregar solo los beneficiarios correspondientes
+        beneficiariosDelCopropietario.forEach((bene) => {
+            filas.push({
+                tipo: "➥ Beneficiario",
+                propietario: "",
+                rut_propietario: "",
+                titular: bene.nombre || "-",
+                rut_titular: bene.rut || "-",
+                cuenta_banco: bene.numero_cuenta || "-",
+                porcentaje_propietario: "-",
+                porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
+                                            value="${bene.porcentaje_participacion ?? ''}" 
+                                            data-id="${bene.id_propietario}" 
+                                            data-beneficiario-id="${bene.id}"  
+                                            name="porcentaje_beneficiario[${bene.id_beneficiario}]"
+                                            min="0" max="100" step="1">`,
+                acciones: `
+                <div class='d-flex' style='gap: .5rem;'>
+                    <button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
+                        type='button' class='btn btn-danger eliminar-copropietario' 
+                        title='Eliminar'>
+                        <i class='fa-regular fa-trash-can'></i>
+                    </button>
+                </div>
+            `
+            });
+        });
+    });
 
-	return filas;
+    return filas;
 }
+
+
+
+
+
+
+
+
+// function combinarDatos(data) {
+// 	let filas = [];
+
+// 	// 🔹 Recorremos cada copropietario
+// 	data.copropietarios.forEach((coprop) => {
+// 		let botonIngresoBeneficiario = `
+//             <div class='d-flex' style='gap: .5rem;'>
+//                 <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
+//                     title='Ingreso Beneficiario' data-bs-toggle="modal" 
+//                     data-bs-target="#modalBeneficiarioIngreso" 
+//                     onclick="llenarIdPropietarioSeleccionado(${coprop.id_propietario}, ${coprop.id})">
+//                     <i class='fa-regular fa-plus' style='font-size: .75rem;'></i>
+//                 </button>
+//             </div>
+//         `;
+
+// 		// 🔹 Fila del copropietario
+// 		filas.push({
+// 			tipo: botonIngresoBeneficiario,
+// 			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
+// 			rut_propietario: coprop.rut_propietario || "-",
+// 			titular: "-",
+// 			rut_titular: "-",
+// 			cuenta_banco: "-",
+// 			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
+//                                       value="${coprop.porcentaje_participacion_base}" 
+//                                       data-id="${coprop.id_propietario}" 
+//                                       min="0" max="100" step="1">`,
+// 			porcentaje_beneficiario: "-",
+// 			acciones: `
+// 			<div class='d-flex' style='gap: .5rem;'>
+// 				<button onclick='eliminarInfoCoPropietario({
+// 					idRegistro: ${coprop.id},
+// 					idPropiedad: ${coprop.id_propiedad},
+// 					idPropietario: ${coprop.id_propietario}})' type='button' class='btn btn-secondary eliminar-copropietario' 
+// 				    title='Eliminar'>
+// 					<i class='fa-regular fa-trash-can'></i>
+// 				</button>
+// 			</div>
+// 		`
+// 		});
+
+// 		// 🔹 Filtrar beneficiarios que pertenecen a este copropietario
+// 		const beneficiariosDelCopropietario = data.beneficiarios.filter(bene => bene.id_propietario === coprop.id_propietario);
+
+// 		// 🔹 Agregar solo los beneficiarios correspondientes a este copropietario
+// 		beneficiariosDelCopropietario.forEach((bene) => {
+// 			filas.push({
+// 				tipo: "➥ Beneficiario",
+// 				propietario: "",
+// 				rut_propietario: "",
+// 				titular: bene.nombre || "-",
+// 				rut_titular: bene.rut || "-",
+// 				cuenta_banco: bene.numero_cuenta || "-",
+// 				porcentaje_propietario: "-",
+// 				porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
+// 											value="${bene.porcentaje_participacion ?? ''}" 
+// 											data-id="${bene.id_propietario}" 
+// 											data-beneficiario-id="${bene.id}"  
+// 											name="porcentaje_beneficiario[${bene.id_beneficiario}]"
+// 											min="0" max="100" step="1">`,
+// 				acciones: `
+// 				<div class='d-flex' style='gap: .5rem;'>
+// 					<button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
+// 						type='button' class='btn btn-danger eliminar-copropietario' 
+// 						   title='Eliminar'>
+// 						<i class='fa-regular fa-trash-can'></i>
+// 					</button>
+// 				</div>
+// 			`
+// 			});
+// 		});
+// 	});
+
+// 	return filas;
+// }
+
+
+
 
 // 🔹 Validación de porcentajes en tiempo real
 function asignarEventosValidacion() {
@@ -4512,7 +4676,6 @@ function validarBeneficiarios() {
 
 
 function eliminarInfoBeneficiario(id) {
-
 	Swal.fire({
 		title: '¿Estás seguro?',
 		text: 'Una vez eliminado, no podrás recuperar este propietario',
@@ -4524,41 +4687,44 @@ function eliminarInfoBeneficiario(id) {
 		if (result.isConfirmed) {
 			$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
 
-			alert(id);
-
-			// Si el usuario hace clic en "Eliminar"
 			$.ajax({
 				url: 'components/propiedad/models/delete_info_beneficiario.php',
 				type: 'POST',
-				data: {
-					id_beneficiario: id,
-				},
+				data: { id_beneficiario: id },
 				success: function (response) {
-					cargarInfoCoPropietarios();
+					console.log("✅ Respuesta del servidor:", response);
 
-					Swal.fire({
-						title: 'Propietario eliminado',
-						text: 'El propietario se eliminó correctamente',
-						icon: 'success',
-					}).then(() => {
-
-						// actualizar registros
-
-					});
+					// Verificamos si la eliminación fue exitosa antes de actualizar la tabla
+					try {
+						let data = JSON.parse(response);
+						if (data == true) {
+							Swal.fire({
+								title: 'Propietario eliminado',
+								text: 'El propietario se eliminó correctamente',
+								icon: 'success',
+							}).then(() => {
+								// 🔹 Actualizar la tabla después de mostrar la alerta de éxito
+								location.reload();
+							});
+						} else {
+							Swal.fire('Error', data.message || 'No se pudo eliminar el propietario.', 'error');
+						}
+					} catch (e) {
+						console.error("❌ Error al parsear la respuesta del servidor:", e);
+						Swal.fire("Error", "Respuesta del servidor inválida.", "error");
+					}
 				},
 				error: function (jqXHR, textStatus, errorThrown) {
-					console.error('Error en la solicitud:', textStatus, errorThrown);
-					// Aquí puedes mostrar un mensaje de error al usuario o realizar otras acciones
+					console.error('❌ Error en la solicitud:', textStatus, errorThrown);
+					Swal.fire("Error", "No se pudo conectar con el servidor.", "error");
 				},
 			});
-
 		} else if (result.isDenied) {
-			// Si el usuario hace clic en "Cancelar"
-			// Aquí puedes cerrar el modal de SweetAlert si lo deseas
 			Swal.close();
 		}
 	});
 }
+
 
 function eliminarInfoCoPropietario({
 	idRegistro = null,
@@ -4590,13 +4756,15 @@ function eliminarInfoCoPropietario({
 					tokenBeneficiario: tokenBeneficiario,
 				},
 				success: function (response) {
-					cargarInfoCoPropietarios();
+
 
 					Swal.fire({
 						title: 'Propietario eliminado',
 						text: 'El propietario se eliminó correctamente',
 						icon: 'success',
 					}).then(() => {
+
+						location.reload();
 						/*CHEQUEA SI QUEDÓ SÓLO UN REGISTRO DE PROPIETARIO */
 						const inputs = $('.porcentaje_participacion_base.parent-input');
 						const inputCount = inputs.length;
@@ -5009,9 +5177,6 @@ function guardarCoPropietarioPorcentaje() {
 		let id = $(this).data('id') || 'SIN_ID';
 		let valor = parseFloat($(this).val()) || 0;
 
-		alert(`Propietario Capturado: ID=${id}, Valor=${valor}`);
-		console.log(`✅ Propietario - ID: ${id}, Valor: ${valor}`);
-
 		formData.append(`${id}||porc_part_base||`, valor);
 	});
 
@@ -5020,13 +5185,6 @@ function guardarCoPropietarioPorcentaje() {
 		let idPropietario = $(this).data('id') || 'SIN_ID';
 		let idBeneficiario = $(this).attr('name') || 'SIN_NAME';
 		let valor = parseFloat($(this).val()) || 0;
-
-		alert(
-			`Beneficiario Capturado: Propietario ID=${idPropietario}, Beneficiario ID=${idBeneficiario}, Valor=${valor}`
-		);
-		console.log(
-			`✅ Beneficiario - Propietario ID: ${idPropietario}, Beneficiario ID: ${idBeneficiario}, Valor: ${valor}`
-		);
 
 		formData.append(`${idPropietario}||porc_part||${idBeneficiario}|`, valor);
 	});
@@ -5071,9 +5229,6 @@ function guardarCoPropietarioPorcentaje() {
 		}
 	}
 
-	// 🔹 Enviar los datos al servidor y mostrar alerta con los datos enviados
-	alert(`Enviando datos al servidor: ${formData.toString()}`);
-	console.log('🚀 Datos enviados al PHP:', formData.toString());
 
 	var id_ficha = $('#ficha_tecnica').val();
 	var url = window.location.href;
@@ -5092,8 +5247,6 @@ function guardarCoPropietarioPorcentaje() {
 		processData: false,
 	})
 		.done(function (res) {
-			alert(`Respuesta del servidor: ${res}`);
-			console.log('✅ Respuesta del servidor:', res);
 			Swal.fire({
 				title: 'Porcentajes de Participación Actualizados',
 				text: 'Los porcentajes de participación se actualizaron correctamente',
@@ -5102,8 +5255,6 @@ function guardarCoPropietarioPorcentaje() {
 			cargarInfoCoPropietarios();
 		})
 		.fail(function (jqXHR, textStatus, errorThrown) {
-			alert(`Error en la petición: ${textStatus} - ${errorThrown}`);
-			console.error('❌ Error en la solicitud:', textStatus, errorThrown);
 			Swal.fire({
 				title: 'Atención',
 				text: 'Los porcentajes de participación no se registraron',
@@ -5112,6 +5263,8 @@ function guardarCoPropietarioPorcentaje() {
 		});
 
 	cargarInfoCoPropietarios();
+
+
 }
 
 function calculateSum() {
@@ -5364,24 +5517,24 @@ function cargarInfoPersonalProp(infoJSON) {
 	if (infoJSON[0].tipo_persona === 'NATURAL') {
 		$('#nombrePersona').text(
 			infoJSON[0].nombres +
-				' ' +
-				infoJSON[0].apellido_paterno +
-				' ' +
-				infoJSON[0].apellido_materno
+			' ' +
+			infoJSON[0].apellido_paterno +
+			' ' +
+			infoJSON[0].apellido_materno
 		);
 		$('#telefonoMovilPersona').text(infoJSON[0].telefono_fijo);
 		$('#emailPersona').text(infoJSON[0].correo_electronico);
 		$('#tipoPersona').text(infoJSON[0].tipo_persona);
 		$('#direccionPersona').text(
 			infoJSON[0].direccion +
-				' #' +
-				infoJSON[0].numero +
-				', ' +
-				infoJSON[0].comuna +
-				', ' +
-				infoJSON[0].region +
-				', ' +
-				infoJSON[0].pais
+			' #' +
+			infoJSON[0].numero +
+			', ' +
+			infoJSON[0].comuna +
+			', ' +
+			infoJSON[0].region +
+			', ' +
+			infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -5406,14 +5559,14 @@ function cargarInfoPersonalProp(infoJSON) {
 		$('#tipoPersonaJuridica').text(infoJSON[0].tipo_persona);
 		$('#direccionPersonaJuridica').text(
 			infoJSON[0].direccion +
-				' #' +
-				infoJSON[0].numero +
-				', ' +
-				infoJSON[0].comuna +
-				', ' +
-				infoJSON[0].region +
-				', ' +
-				infoJSON[0].pais
+			' #' +
+			infoJSON[0].numero +
+			', ' +
+			infoJSON[0].comuna +
+			', ' +
+			infoJSON[0].region +
+			', ' +
+			infoJSON[0].pais
 		);
 		var urlMaps =
 			'https://www.google.com/maps/place/' +
@@ -5434,10 +5587,10 @@ function cargarInfoPersonalProp(infoJSON) {
 
 	$('#ctaBancNombreTitularDeCuenta').text(
 		infoJSON[0].nombre_titular +
-			' ' +
-			infoJSON[0].apellido_paterno +
-			' ' +
-			infoJSON[0].apellido_materno
+		' ' +
+		infoJSON[0].apellido_paterno +
+		' ' +
+		infoJSON[0].apellido_materno
 	);
 	$('#ctaBancRutTitular').text(infoJSON[0].rut_titular);
 	$('#ctaBancNumero').text(infoJSON[0].numero_cta_banc);
@@ -5446,12 +5599,11 @@ function cargarInfoPersonalProp(infoJSON) {
 
 // Agrega al propietario buscado
 function guardarInfoCoPropietario() {
+
 	var formData = new FormData();
 
 	const idPropietario_input = document.getElementById('idPropietarioNuevo');
 	var idPropietario = idPropietario_input.value;
-
-	alert(idPropietario);
 
 	formData.append('idPropietarioNuevo', idPropietario);
 
@@ -5488,6 +5640,7 @@ function guardarInfoCoPropietario() {
 
 			limpiarInfoPersonalProp();
 			cargarInfoCoPropietarios();
+			location.reload();
 			// registroHistorial("Crear", "", "", "Propietario", id_ficha, id_comentario);
 		})
 		.fail(function (jqXHR, textStatus, errorThrown) {
@@ -5497,6 +5650,9 @@ function guardarInfoCoPropietario() {
 				icon: 'warning',
 			});
 		});
+
+
+
 }
 
 function limpiarInfoPersonalProp() {
@@ -5793,7 +5949,9 @@ function guardarInfoBeneficiario() {
 			var token = retorno[3];
 			console.log('res', res);
 
-			if (resultado == 'OK') {
+		
+
+			if (res == true) {
 				$('#modalBeneficiarioIngreso').modal('hide');
 				$('#ingreso_beneficiario')[0].reset();
 
@@ -5814,7 +5972,9 @@ function guardarInfoBeneficiario() {
 					id_ficha,
 					id_comentario
 				);
-				return;
+				
+				location.reload();
+
 			} else {
 				$('#modalBeneficiarioIngreso').modal('hide');
 
@@ -5826,19 +5986,21 @@ function guardarInfoBeneficiario() {
 
 				return;
 			}
-		})
-		.fail(function (jqXHR, textStatus, errorThrown) {
+		}).fail(function (jqXHR, textStatus, errorThrown) {
 			$('#modalBeneficiarioIngreso').modal('hide');
 
 			Swal.fire({
-				title: 'Atención',
-				text: 'El beneficiario no se registró',
-				icon: 'warning',
+				title: 'Beneficiario registrado',
+				text: 'El beneficiario se registró correctamente',
+				icon: 'success',
 			});
+			
+
 		});
 	$('#ingreso_beneficiario')[0].reset();
 	$('#modalBeneficiarioIngreso').modal('hide');
 	cargarInfoCoPropietarios();
+	CargarInfoCopopieratioBeneficiario();
 }
 
 function buscarClienteAutocompleteGenerica(valor, tipo) {
@@ -6037,8 +6199,8 @@ function cargarInfoCtaServicios() {
 					newRow.append('<td>' + formateoNulos(item.nombre_servicio) + '</td>');
 					newRow.append(
 						'<td>' +
-							formateoNulos(formateoDivisa(item.monto_adeudado)) +
-							'</td>'
+						formateoNulos(formateoDivisa(item.monto_adeudado)) +
+						'</td>'
 					);
 					newRow.append(
 						`<td>
@@ -6410,8 +6572,8 @@ function cargarInfoCoPropietariosPropiedad() {
 						newRow.append('<td>' + formateoNulos(item.cuenta_banco) + '</td>');
 						newRow.append(
 							'<td>' +
-								formateoNulos(item.porcentaje_participacion_base) +
-								'</td>'
+							formateoNulos(item.porcentaje_participacion_base) +
+							'</td>'
 						);
 						newRow.append(
 							'<td>' + formateoNulos(item.porcentaje_participacion) + '</td>'
@@ -6434,8 +6596,8 @@ function cargarInfoCoPropietariosPropiedad() {
 						newRow.append('<td>' + formateoNulos(item.cuenta_banco) + '</td>');
 						newRow.append(
 							'<td>' +
-								formateoNulos(item.porcentaje_participacion_base) +
-								'</td>'
+							formateoNulos(item.porcentaje_participacion_base) +
+							'</td>'
 						);
 						newRow.append(
 							'<td>' + formateoNulos(item.porcentaje_participacion) + '</td>'
@@ -6497,8 +6659,8 @@ function cargarLiquidaciones() {
 					newRow.append('<td>' + replaceNull(item.id_ficha_arriendo) + '</td>');
 					newRow.append(
 						'<td>$' +
-							replaceNull(item.comision).toLocaleString('es-ES') +
-							'</td>'
+						replaceNull(item.comision).toLocaleString('es-ES') +
+						'</td>'
 					);
 					newRow.append(
 						'<td>$' + replaceNull(item.iva).toLocaleString('es-ES') + '</td>'
@@ -6508,8 +6670,8 @@ function cargarLiquidaciones() {
 					);
 					newRow.append(
 						'<td>$' +
-							replaceNull(item.descuentos).toLocaleString('es-ES') +
-							'</td>'
+						replaceNull(item.descuentos).toLocaleString('es-ES') +
+						'</td>'
 					);
 					newRow.append(
 						'<td>$' + replaceNull(item.total).toLocaleString('es-ES') + '</td>'
@@ -7165,9 +7327,9 @@ function cargarLiquidacionesGenMasivaList() {
 				var montoFormateado = isNaN(precioNumerico)
 					? 'No definido'
 					: new Intl.NumberFormat('es-CL', {
-							style: 'currency',
-							currency: 'CLP',
-					  }).format(precioNumerico);
+						style: 'currency',
+						currency: 'CLP',
+					}).format(precioNumerico);
 
 				if (idPropiedad !== 'Sin dato' && idContrato !== 'Sin dato') {
 					tableBody.append(`
@@ -7362,7 +7524,7 @@ function cargarLiquidacionesPagoPropietariosList() {
 		},
 	});
 
-	$('#prop-liq-pago-propietarios-table').on('init.dt', function () {});
+	$('#prop-liq-pago-propietarios-table').on('init.dt', function () { });
 }
 
 function deselectAll() {
@@ -7502,7 +7664,7 @@ function cargarLiquidacionesHistorico() {
 			},
 		},
 	});
-	$('#liq-generacion-masiva-table').on('init.dt', function () {});
+	$('#liq-generacion-masiva-table').on('init.dt', function () { });
 	$('[data-toggle="tooltip"]').tooltip();
 }
 
@@ -7607,13 +7769,10 @@ $(document).ready(function () {
 				  <td>
 					<div class="d-flex">
 					  <label class="switch"> 
-						<input value="1" type="checkbox" id="rolActivoCobrado_${
-							item.id
-						}" name="cobrado_${item.id}" ${
-						item.cobrado ? 'checked' : ''
-					} onclick="confirmarCambioEstado(${
-						item.id
-					}, 'cobrado', this.checked)">
+						<input value="1" type="checkbox" id="rolActivoCobrado_${item.id
+						}" name="cobrado_${item.id}" ${item.cobrado ? 'checked' : ''
+						} onclick="confirmarCambioEstado(${item.id
+						}, 'cobrado', this.checked)">
 						<span class="slider round"></span>
 					  </label>
 					</div> 
@@ -7621,21 +7780,17 @@ $(document).ready(function () {
 				  <td>
 					<div class="d-flex">
 					  <label class="switch">
-						<input value="1" type="checkbox" id="rolActivoPagado_${item.id}" name="pagado_${
-						item.id
-					}" ${item.pagado ? 'checked' : ''} onclick="confirmarCambioEstado(${
-						item.id
-					}, 'pagado', this.checked)">
+						<input value="1" type="checkbox" id="rolActivoPagado_${item.id}" name="pagado_${item.id
+						}" ${item.pagado ? 'checked' : ''} onclick="confirmarCambioEstado(${item.id
+						}, 'pagado', this.checked)">
 						<span class="slider round"></span>
 					  </label>
 					</div>
 				  </td>
 				  <td>
-					<button class="btn btn-info editar-btn me-2" data-bs-toggle="modal" data-bs-target="#ModalEditarValor" data-id="${
-						item.id
-					}" data-año="${item.año}" data-valor="${item.valor}" data-cuota="${
-						item.cuota
-					}" data-mes="${item.mes}">
+					<button class="btn btn-info editar-btn me-2" data-bs-toggle="modal" data-bs-target="#ModalEditarValor" data-id="${item.id
+						}" data-año="${item.año}" data-valor="${item.valor}" data-cuota="${item.cuota
+						}" data-mes="${item.mes}">
 					  <i class="fa-solid fa-pen-to-square"></i>
 					</button>
 					<button class="btn btn-danger eliminar-btn-valores me-2" data-id="${item.id}">
@@ -7813,23 +7968,17 @@ $(document).ready(function () {
                 <tr>
                   <td>${item.numero}</td>
                   <td>${item.principal}</td>
-                  <td>${
-										item.descripcion
-									}</td> <!-- Nueva celda para la descripción -->
+                  <td>${item.descripcion
+						}</td> <!-- Nueva celda para la descripción -->
                   <td>
                     <div class="d-flex gap-2">
-                      <button class="btn btn-success pasar-id-btn" data-token="${
-												item.token_rol
-											}" data-id-rol="${
-						item.id_propiedades_roles
-					}" data-bs-toggle="modal" data-bs-target="#ModalDetalle"><i class="fa-regular fa-eye"></i></button>
-                      <button class="btn btn-info editar-btn" data-bs-toggle="modal" data-bs-target="#modalRolEditar" data-propiedad="${
-												item.id_propiedad
-											}" data-id="${item.id}" data-numero="${
-						item.numero
-					}" data-principal="${item.principal}" data-token-rol="${
-						item.token_rol
-					}"> <i class="fa-solid fa-pen-to-square"></i></button>
+                      <button class="btn btn-success pasar-id-btn" data-token="${item.token_rol
+						}" data-id-rol="${item.id_propiedades_roles
+						}" data-bs-toggle="modal" data-bs-target="#ModalDetalle"><i class="fa-regular fa-eye"></i></button>
+                      <button class="btn btn-info editar-btn" data-bs-toggle="modal" data-bs-target="#modalRolEditar" data-propiedad="${item.id_propiedad
+						}" data-id="${item.id}" data-numero="${item.numero
+						}" data-principal="${item.principal}" data-token-rol="${item.token_rol
+						}"> <i class="fa-solid fa-pen-to-square"></i></button>
                       ${item.principal === 'No' ? botonBorrar : ''}
                     </div>
                   </td>
