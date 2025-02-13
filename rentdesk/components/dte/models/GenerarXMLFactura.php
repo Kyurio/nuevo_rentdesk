@@ -213,7 +213,7 @@ try {
         $cdgItem = $dom->createElement('CdgItem');
         $detalle->appendChild($cdgItem);
         $cdgItem->appendChild($dom->createElement('TpoCodigo', 'INTERNO'));
-        $cdgItem->appendChild($dom->createElement('VlrCodigo', $data['cdg_item_valor']));
+        $cdgItem->appendChild($dom->createElement('VlrCodigo', $data['ficha_propiedad']));
 
         $detalle->appendChild($dom->createElement('NmbItem', $data['nombre_item']));
         $detalle->appendChild($dom->createElement('DscItem', $data['descripcion_item']));
@@ -304,11 +304,19 @@ try {
             } else {
 
                 // Convertir y concatenar el nombre completo del propietario
-                $NombrePropietario = mb_convert_encoding(
-                    $row['nombre'] . " " . $row['apellido_paterno'] . " " . $row['apellido_materno'],
-                    'UTF-8',
-                    'ISO-8859-1'
-                );
+                if($row['nombre']!="" && $row['apellido_paterno'] !="" && $row['apellido_materno'] !="" ){
+                        $NombrePropietario = mb_convert_encoding(
+                            $row['nombre'] . " " . $row['apellido_paterno'] . " " . $row['apellido_materno'],
+                            'UTF-8',
+                            'ISO-8859-1'
+                        );
+                    }else{
+                        $NombrePropietario = mb_convert_encoding(
+                            $row['razon_social'] ,
+                            'UTF-8',
+                            'ISO-8859-1'
+                        );
+                    }
 
                 $rutPropietario = $row['dni'];
                 $cantidadItems = 1;
@@ -322,7 +330,7 @@ try {
                 $porcentaje_participacion = $row['porcentaje_participacion'];
                 $porcentaje_iva = $row['iva'];
                 // Calcular monto neto basado en la participación
-                $monto_neto = $row['monto'] * ($porcentaje_participacion / 100);
+                $monto_neto = round($row['monto'] * ($porcentaje_participacion / 100));
                 // Calcular IVA
                 $monto_iva = round($monto_neto * ($porcentaje_iva / 100));
                 // Calcular monto total bruto (neto + IVA)

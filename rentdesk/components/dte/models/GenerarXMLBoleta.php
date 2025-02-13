@@ -435,7 +435,19 @@ try {
             } else {
 
                 // Convertir y concatenar el nombre completo del propietario
-                $NombrePropietario = $row['nombre'] . " " . $row['apellido_paterno'] . " " . $row['apellido_materno'];
+		if($row['nombre']!="" || $row['apellido_paterno'] !="" || $row['apellido_materno'] !=""){
+                        $NombrePropietario = mb_convert_encoding(
+                            $row['nombre'] . " " . $row['apellido_paterno'] . " " . $row['apellido_materno'],
+                            'UTF-8',
+                            'ISO-8859-1'
+                        );
+                    }else{
+                        $NombrePropietario = mb_convert_encoding(
+                            $row['razon_social'] ,
+                            'UTF-8',
+                            'ISO-8859-1'
+                        );
+                    }
                 $rutPropietario = $row['dni'];
                 $cantidadItems = 1;
                 $descripcionCobro = $row['razon'];
@@ -449,7 +461,7 @@ try {
                  */
                 $porcentaje_participacion = $row['porcentaje_participacion'];
                 $mnt_porcentaje = $row['monto'] * ($porcentaje_participacion / 100);
-                $mnt_bruto = $mnt_porcentaje; // monto bruto
+                $mnt_bruto = round($mnt_porcentaje); // monto bruto
                 //$monto_neto =  round($mnt_bruto / (1  + ($porcentaje_iva / 100)));
                 $monto_neto =  round($mnt_bruto * (1  + ($porcentaje_iva / 100)));
                 $monto_iva = ($monto_neto - $mnt_bruto);
