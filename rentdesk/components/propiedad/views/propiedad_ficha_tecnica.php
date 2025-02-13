@@ -496,7 +496,7 @@
 
 													</table>
 								 -->
-													<table id="info-copropietarios" class="display">
+													<table id="info-copropietarios"  style="width: 100% !important;">
 														<thead>
 															<tr>
 																<th></th>
@@ -521,7 +521,7 @@
 														<div class="p-2 w-100"></div>
 														<div class="p-2 flex-shrink-1">
 															<button onclick="guardarCoPropietarioPorcentaje()" type="button" class="btn btn-info" style="padding: .5rem;" title="Guardar">
-																<span>Guardar Participaciones</span>
+																<span>Actualizar Porcentaje Participaciones</span>
 															</button>
 														</div>
 													</div>
