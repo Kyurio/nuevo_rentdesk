@@ -72,12 +72,22 @@ $(document).ready(function () {
 			const idDate = getIdDate();
 			let allTasksCompleted = { generarExcel: false, descargarTxt: false };
 
+			// Mostrar alerta de carga
+			Swal.fire({
+				title: 'Procesando...',
+				text: 'Por favor espera mientras se generan los documentos.',
+				allowOutsideClick: false,
+				didOpen: () => {
+					Swal.showLoading();
+				},
+			});
+
 			const checkedItems = $('.switchCheques:checked');
 			for (let i = 0; i < checkedItems.length; i++) {
 				const cierre = $(checkedItems[i]).closest('tr').find('td:first').text();
 
 				try {
-					// Obtener las liquidaciones (aunque no las iteremos, necesitamos el id_liquidacion)
+					// Obtener las liquidaciones
 					const liquidaciones = await $.ajax({
 						url: 'components/officesbanking/models/GetIdLiquidaciones.php',
 						method: 'GET',
@@ -97,13 +107,6 @@ $(document).ready(function () {
 					});
 
 					// Generar datos para Office Banking
-					const officeBanking = await $.ajax({
-						url: 'components/officesbanking/models/GenerarOfficeBanking.php',
-						method: 'GET',
-						data: { cierre: cierre },
-						dataType: 'json',
-					});
-
 					const officeBankingDoc = await $.ajax({
 						url: 'components/officesbanking/models/GenerarDocumetoOfficeBanking.php',
 						method: 'GET',
@@ -113,12 +116,6 @@ $(document).ready(function () {
 					offbnk.push(officeBankingDoc);
 
 					// Generar datos para Thomson
-					const thomsonData = await $.ajax({
-						url: 'components/officesbanking/models/GenerarThompson.php',
-						method: 'GET',
-						data: { cierre: cierre },
-						dataType: 'json',
-					});
 					const thomsonDoc = await $.ajax({
 						url: 'components/officesbanking/models/GenerarDocumentosThomson.php',
 						method: 'GET',
@@ -128,6 +125,13 @@ $(document).ready(function () {
 					thomson.push(thomsonDoc);
 				} catch (error) {
 					console.error('Error procesando cierre:', cierre, error);
+					// Mostrar alerta de error
+					Swal.fire({
+						icon: 'error',
+						title: 'Error',
+						text: `Hubo un problema procesando el cierre: ${cierre}`,
+					});
+					return;
 				}
 			}
 
@@ -136,12 +140,20 @@ $(document).ready(function () {
 				await descargarTxt(thomson, idDate, allTasksCompleted);
 			} catch (error) {
 				console.error('Error procesando los datos finales:', error);
+				// Mostrar alerta de error
+				Swal.fire({
+					icon: 'error',
+					title: 'Error',
+					text: 'Hubo un problema al generar los documentos.',
+				});
+				return;
 			}
 
 			// Monitorear el estado de las tareas para recargar la página
 			const monitorTasks = setInterval(() => {
 				if (allTasksCompleted.generarExcel && allTasksCompleted.descargarTxt) {
 					clearInterval(monitorTasks);
+					Swal.close(); // Cerrar la alerta de carga
 					location.reload();
 				}
 			}, 500);
@@ -451,6 +463,12 @@ function CargarListadoArchivos() {
 		method: 'GET',
 		dataType: 'json',
 		success: function (data) {
+			//deshabilitar el botón de generar Office Banking si no hay datos
+			if (!data.datos || data.datos.length === 0) {
+				$('#generarOfficeBanking').prop('hidden', true);
+				return;
+			}
+
 			var tableBody = $('#archivos tbody');
 			// Guardamos los datos originales para poder filtrarlos después
 			var originalData = data.slice(); // Hacemos una copia de los datos originales

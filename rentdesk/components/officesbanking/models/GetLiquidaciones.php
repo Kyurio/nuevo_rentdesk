@@ -11,37 +11,46 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$config        = new Config;
-$services   = new ServicesRestful;
+// Especificamos que el contenido que se retorna es JSON
+header('Content-Type: application/json');
+
+$config       = new Config;
+$services     = new ServicesRestful;
 $url_services = $config->url_services;
 
 $id_company = $_SESSION["rd_company_id"];
 $id_usuario = $_SESSION["rd_usuario_id"];
-$token    = @$_GET["token"];
-
+$token      = @$_GET["token"];
 
 // Obtener el método de la solicitud
 $metodo = $_SERVER['REQUEST_METHOD'];
 
-// Validar si el método no es DELETE
+// Validar que el método sea GET
 if ($metodo !== 'GET') {
-    // Manejar el error
     http_response_code(405); // Método no permitido
-    echo json_encode(['error' => 'Método no permitido. Solo se permite DELETE.']);
+    echo json_encode(['error' => 'Método no permitido. Solo se permite GET.']);
     exit;
 }
 
-/*Consulta Cantidad de registros*/
-$query_count = "SELECT pl.cierre             as cierre
-                    , to_char(pl.fecha_liquidacion ::DATE, 'DD/MM/YYYY') as fecha_liquidacion
-                    , count(*)     as Cantidad
-                from propiedades.propiedad_liquidaciones pl
-                where estado = 1
-                group by pl.cierre, to_char(pl.fecha_liquidacion ::DATE, 'DD/MM/YYYY')";
+/* Consulta Cantidad de registros */
+$query_count = "SELECT 
+                    pl.cierre as cierre,
+                    to_char(pl.fecha_liquidacion ::DATE, 'DD/MM/YYYY') as fecha_liquidacion,
+                    count(*) as Cantidad
+                FROM propiedades.propiedad_liquidaciones pl
+                WHERE estado = 1
+                GROUP BY pl.cierre, to_char(pl.fecha_liquidacion ::DATE, 'DD/MM/YYYY')";
 
 $data = array("consulta" => $query_count);
 $resultado = $services->sendPostNoToken($url_services . '/util/objeto', $data);
 
+// Intentamos decodificar la respuesta como JSON
+$datos = json_decode($resultado, true);
 
+// Si la decodificación falla o no hay datos, asignamos un array vacío
+if ($datos === null) {
+    $datos = [];
+}
 
-echo $resultado;
+// Retornamos siempre un objeto JSON con la propiedad "datos"
+echo json_encode(["datos" => $datos]);
