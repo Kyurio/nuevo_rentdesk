@@ -136,7 +136,7 @@
 													</div>
 													<div class="col">
 														<label class="fw-bold">Dirección</label><br>
-														<label id="ctaBancNombreTitular"><?php echo  $direccion; ?></label>
+														<label id="labelDireccionFichaPropiedad"></label>
 													</div>
 													<!-- <div class="col">
 															<label class="fw-bold">Complemento</label><br>
@@ -496,7 +496,7 @@
 
 													</table>
 								 -->
-													<table id="info-copropietarios"  style="width: 100% !important;">
+													<table id="info-copropietarios" style="width: 100% !important;">
 														<thead>
 															<tr>
 																<th></th>
