@@ -1,8 +1,8 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 
 session_start();
@@ -81,7 +81,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	if ($result) {
 
-		echo "No se puede modificar por que hay movimientos en la cuenta corriente.";
+		//echo "No se puede modificar por que hay movimientos en la cuenta corriente.";
+		echo ",xxx,xxx,No se puede modificar por que hay movimientos en la cuenta corriente.,xxx,-,xxx,";
+
+
+
 	} else {
 
 		// Accessing form fields
@@ -652,16 +656,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$result = $queryBuilder->executeFunction('propiedades.fn_limpia_ctacte_arriendo', [$idFichaArriendo]);
 
 
-
-
-
 		if ($cantidad_estados == 0) {
 			$queryDeleteMesesArriendo = "DELETE FROM propiedades.ficha_arriendo_cuotas_garantia
 			WHERE id_ficha_arriendo = $idFichaArriendo";
 			$dataCab = array("consulta" => $queryDeleteMesesArriendo);
 			$resultadoDelete = $services->sendPostDirecto($url_services . '/util/dml', $dataCab);
-			if ($resultadoDelete != "") {
 
+
+
+			 if ($resultadoDelete != "") {
 
 				////////////////////////////Insertar Meses
 				// Fecha inicial
@@ -678,6 +681,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				}
 
 				for ($i = 1; $i <= $num_cuotas_garantia; $i++) {
+
 					// Modificar la fecha para obtener el primer día del mes siguiente
 					// Obtener el mes y el año por separado
 					$mes = $date->format('m'); // Mes
@@ -687,13 +691,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					}
 
 
-					$queryInsertMesesGarantia = "insert into propiedades.ficha_arriendo_cuotas_garantia (num_cuotas, id_ficha_arriendo, monto_garantia, mes_garantia, garantia_ano, habilitado)
-					values ('$i','$idFichaArriendo','$valor_cuota','$mes','$anio','1')";
+					$queryInsertMesesGarantia = "INSERT INTO propiedades.ficha_arriendo_cuotas_garantia 
+					(num_cuotas, id_ficha_arriendo, monto_garantia, mes_garantia, garantia_ano, habilitado)
+					values ($i,$idFichaArriendo,$valor_cuota,$mes,$anio,true)";
+					
 					$dataCab = array("consulta" => $queryInsertMesesGarantia);
-
-
 					$resultadoCab1 = $services->sendPostDirecto($url_services . '/util/dml', $dataCab);
-
 
 					if ($resultadoCab1 != "OK") {
 						echo ",xxx,ERROR,xxx,No se logro insertar datos de arriendo 1 ,xxx,-,xxx,";
@@ -892,7 +895,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 		$eliminaMovimientosCtaCte = "DELETE FROM propiedades.ficha_arriendo_cta_cte_movimientos WHERE  id_ficha_arriendo = $idFichaArriendo";
-		$dataCab = array("consulta" => $queryDeleteMesesArriendo);
+		$dataCab = array("consulta" => $eliminaMovimientosCtaCte);
 		$resultadoDelete = $services->sendPostDirecto($url_services . '/util/dml', $dataCab);
 
 

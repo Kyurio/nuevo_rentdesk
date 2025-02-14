@@ -4436,22 +4436,22 @@ async function CargarInfoCopopieratioBeneficiario() {
 
 
 function combinarDatos(data) {
-    let filas = [];
+	let filas = [];
 
-    // 🔹 Eliminar copropietarios duplicados (por id_propietario)
-    const copropietariosUnicos = [];
-    const idsVistos = new Set();
+	// 🔹 Eliminar copropietarios duplicados (por id_propietario)
+	const copropietariosUnicos = [];
+	const idsVistos = new Set();
 
-    data.copropietarios.forEach((coprop) => {
-        if (!idsVistos.has(coprop.id_propietario)) {
-            idsVistos.add(coprop.id_propietario);
-            copropietariosUnicos.push(coprop);
-        }
-    });
+	data.copropietarios.forEach((coprop) => {
+		if (!idsVistos.has(coprop.id_propietario)) {
+			idsVistos.add(coprop.id_propietario);
+			copropietariosUnicos.push(coprop);
+		}
+	});
 
-    // 🔹 Recorremos los copropietarios únicos
-    copropietariosUnicos.forEach((coprop) => {
-        let botonIngresoBeneficiario = `
+	// 🔹 Recorremos los copropietarios únicos
+	copropietariosUnicos.forEach((coprop) => {
+		let botonIngresoBeneficiario = `
             <div class='d-flex' style='gap: .5rem;'>
                 <button type='button' class='btn btn-info m-0 d-flex' style='padding: .5rem;' 
                     title='Ingreso Beneficiario' data-bs-toggle="modal" 
@@ -4462,20 +4462,20 @@ function combinarDatos(data) {
             </div>
         `;
 
-        // 🔹 Fila del copropietario
-        filas.push({
-            tipo: botonIngresoBeneficiario,
-            propietario: coprop.nombre ? coprop.nombre.trim() : "-",
-            rut_propietario: coprop.rut_propietario || "-",
-            titular: "-",
-            rut_titular: "-",
-            cuenta_banco: "-",
-            porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
+		// 🔹 Fila del copropietario
+		filas.push({
+			tipo: botonIngresoBeneficiario,
+			propietario: coprop.nombre ? coprop.nombre.trim() : "-",
+			rut_propietario: coprop.rut_propietario || "-",
+			titular: "-",
+			rut_titular: "-",
+			cuenta_banco: "-",
+			porcentaje_propietario: `<input type="number" class="form-control porcentaje-propietario" 
                                       value="${coprop.porcentaje_participacion_base}" 
                                       data-id="${coprop.id_propietario}" 
                                       min="0" max="100" step="1">`,
-            porcentaje_beneficiario: "-",
-            acciones: `
+			porcentaje_beneficiario: "-",
+			acciones: `
             <div class='d-flex' style='gap: .5rem;'>
                 <button onclick='eliminarInfoCoPropietario({
                     idRegistro: ${coprop.id},
@@ -4486,28 +4486,28 @@ function combinarDatos(data) {
                 </button>
             </div>
         `
-        });
+		});
 
-        // 🔹 Filtrar beneficiarios que pertenecen a este copropietario
-        const beneficiariosDelCopropietario = data.beneficiarios.filter(bene => bene.id_propietario === coprop.id_propietario);
+		// 🔹 Filtrar beneficiarios que pertenecen a este copropietario
+		const beneficiariosDelCopropietario = data.beneficiarios.filter(bene => bene.id_propietario === coprop.id_propietario);
 
-        // 🔹 Agregar solo los beneficiarios correspondientes
-        beneficiariosDelCopropietario.forEach((bene) => {
-            filas.push({
-                tipo: "➥ Beneficiario",
-                propietario: "",
-                rut_propietario: "",
-                titular: bene.nombre || "-",
-                rut_titular: bene.rut || "-",
-                cuenta_banco: bene.numero_cuenta || "-",
-                porcentaje_propietario: "-",
-                porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
+		// 🔹 Agregar solo los beneficiarios correspondientes
+		beneficiariosDelCopropietario.forEach((bene) => {
+			filas.push({
+				tipo: "➥ Beneficiario",
+				propietario: "",
+				rut_propietario: "",
+				titular: bene.nombre || "-",
+				rut_titular: bene.rut || "-",
+				cuenta_banco: bene.numero_cuenta || "-",
+				porcentaje_propietario: "-",
+				porcentaje_beneficiario: `<input type="number" class="form-control porcentaje-beneficiario"
                                             value="${bene.porcentaje_participacion ?? ''}" 
                                             data-id="${bene.id_propietario}" 
                                             data-beneficiario-id="${bene.id}"  
                                             name="porcentaje_beneficiario[${bene.id_beneficiario}]"
                                             min="0" max="100" step="1">`,
-                acciones: `
+				acciones: `
                 <div class='d-flex' style='gap: .5rem;'>
                     <button onclick='eliminarInfoBeneficiario(${bene.id_beneficiario})' 
                         type='button' class='btn btn-danger eliminar-copropietario' 
@@ -4516,11 +4516,11 @@ function combinarDatos(data) {
                     </button>
                 </div>
             `
-            });
-        });
-    });
+			});
+		});
+	});
 
-    return filas;
+	return filas;
 }
 
 
@@ -5949,7 +5949,7 @@ function guardarInfoBeneficiario() {
 			var token = retorno[3];
 			console.log('res', res);
 
-		
+
 
 			if (res == true) {
 				$('#modalBeneficiarioIngreso').modal('hide');
@@ -5972,7 +5972,7 @@ function guardarInfoBeneficiario() {
 					id_ficha,
 					id_comentario
 				);
-				
+
 				location.reload();
 
 			} else {
@@ -5994,7 +5994,7 @@ function guardarInfoBeneficiario() {
 				text: 'El beneficiario se registró correctamente',
 				icon: 'success',
 			});
-			
+
 
 		});
 	$('#ingreso_beneficiario')[0].reset();
@@ -7281,7 +7281,110 @@ function toggleButtonState() {
 	document.getElementById('eliminar-moras').disabled = !isChecked;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // jhernandez
+// function cargarLiquidacionesGenMasivaList() {
+// 	// Mostrar el mensaje de carga con SweetAlert
+// 	Swal.fire({
+// 		title: 'Cargando...',
+// 		text: 'Por favor, espera mientras se cargan los datos.',
+// 		allowOutsideClick: false,
+// 		didOpen: () => {
+// 			Swal.showLoading();
+// 		},
+// 	});
+
+// 	$.ajax({
+// 		url: 'components/propiedad/models/PropiedadesPorLiquidar.php',
+// 		method: 'GET',
+// 		dataType: 'json',
+// 		success: function (data) {
+// 			// Ordenar los datos por idcontrato en orden descendente
+// 			data.sort((a, b) => b.idcontrato - a.idcontrato);
+
+// 			// Si la tabla ya está inicializada como DataTable, destruirla
+// 			if ($.fn.DataTable.isDataTable('#liq-generacion-masiva-table')) {
+// 				$('#liq-generacion-masiva-table').DataTable().destroy();
+// 			}
+
+// 			// Vaciar el cuerpo de la tabla
+// 			var tableBody = $('#liq-generacion-masiva-table tbody');
+// 			tableBody.empty();
+
+// 			// Recorrer los datos y agregar cada fila a la tabla
+// 			$.each(data, function (index, item) {
+// 				var cierre = item.detalle?.conciliacion ?? 0;
+// 				var direccion = item.direccion || 'Sin dato';
+// 				var idPropiedad = item.idpropiedad || 'Sin dato';
+// 				var idContrato = item.idcontrato || 'Sin dato';
+// 				var precioNumerico = parseFloat(item.saldo);
+// 				var montoFormateado = isNaN(precioNumerico)
+// 					? 'No definido'
+// 					: new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(precioNumerico);
+
+// 				if (idPropiedad !== 'Sin dato' && idContrato !== 'Sin dato') {
+// 					tableBody.append(`
+//                         <tr>
+//                             <td>${direccion}</td>
+//                             <td>${idPropiedad}</td>
+//                             <td>${idContrato}</td>
+//                             <td data-order="${precioNumerico}">${montoFormateado}</td>
+//                             <td>${cierre}</td>
+//                             <td>-</td>
+//                             <td>
+//                                 <div class="d-flex">
+//                                     <label class="switch">
+//                                         <input type="checkbox" id="rolActivoEditar_${idPropiedad}" 
+//                                             name="ficha_tecnica" 
+//                                             value="${idPropiedad}"
+//                                             class="checkbox-contrato">
+//                                         <span class="slider round"></span>
+//                                     </label>
+//                                 </div>
+//                             </td>
+//                         </tr>
+//                     `);
+// 				}
+// 			});
+
+// 			// Re-inicializar DataTable con opciones y esperar a que termine de cargar
+// 			$('#liq-generacion-masiva-table').DataTable({
+// 				lengthMenu: [
+// 					[25, 50, 100, 200, 300],
+// 					[25, 50, 100, 200, 300],
+// 				],
+// 				initComplete: function () {
+// 					// Cerrar SweetAlert solo cuando la tabla haya terminado de renderizarse
+// 					Swal.close();
+// 				}
+// 			});
+// 		},
+// 		error: function (xhr, status, error) {
+// 			Swal.fire({
+// 				icon: 'error',
+// 				title: 'Error al cargar los datos',
+// 				text: 'Hubo un problema al obtener la información. Intenta nuevamente.',
+// 			});
+// 			console.error('Error en la solicitud:', error);
+// 		}
+// 	});
+// }
+
 function cargarLiquidacionesGenMasivaList() {
 	// Mostrar el mensaje de carga con SweetAlert
 	Swal.fire({
@@ -7299,9 +7402,7 @@ function cargarLiquidacionesGenMasivaList() {
 		dataType: 'json',
 		success: function (data) {
 			// Ordenar los datos por idcontrato en orden descendente
-			data.sort(function (a, b) {
-				return b.idcontrato - a.idcontrato;
-			});
+			data.sort((a, b) => b.idcontrato - a.idcontrato);
 
 			// Si la tabla ya está inicializada como DataTable, destruirla
 			if ($.fn.DataTable.isDataTable('#liq-generacion-masiva-table')) {
@@ -7314,22 +7415,14 @@ function cargarLiquidacionesGenMasivaList() {
 
 			// Recorrer los datos y agregar cada fila a la tabla
 			$.each(data, function (index, item) {
-				var cierre =
-					item.detalle && item.detalle.conciliacion !== undefined
-						? item.detalle.conciliacion
-						: 0;
-
+				var cierre = item.detalle?.conciliacion ?? 0;
 				var direccion = item.direccion || 'Sin dato';
 				var idPropiedad = item.idpropiedad || 'Sin dato';
 				var idContrato = item.idcontrato || 'Sin dato';
-
 				var precioNumerico = parseFloat(item.saldo);
 				var montoFormateado = isNaN(precioNumerico)
 					? 'No definido'
-					: new Intl.NumberFormat('es-CL', {
-						style: 'currency',
-						currency: 'CLP',
-					}).format(precioNumerico);
+					: new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(precioNumerico);
 
 				if (idPropiedad !== 'Sin dato' && idContrato !== 'Sin dato') {
 					tableBody.append(`
@@ -7356,16 +7449,17 @@ function cargarLiquidacionesGenMasivaList() {
 				}
 			});
 
-			// Re-inicializar DataTable con opciones
-			$('#liq-generacion-masiva-table').DataTable({
+			// Inicializar DataTable
+			var table = $('#liq-generacion-masiva-table').DataTable({
 				lengthMenu: [
 					[25, 50, 100, 200, 300],
 					[25, 50, 100, 200, 300],
 				],
+				drawCallback: function () {
+					// Solo cerramos SweetAlert cuando la tabla haya terminado de renderizarse
+					Swal.close();
+				}
 			});
-
-			// Cerrar SweetAlert después de cargar los datos
-			Swal.close();
 		},
 		error: function (xhr, status, error) {
 			Swal.fire({
@@ -7374,23 +7468,33 @@ function cargarLiquidacionesGenMasivaList() {
 				text: 'Hubo un problema al obtener la información. Intenta nuevamente.',
 			});
 			console.error('Error en la solicitud:', error);
-		},
+		}
 	});
 }
 
+
+
 function habilitarTodos() {
-	$('#liq-generacion-masiva-table tbody input[type="checkbox"]').prop(
-		'checked',
-		true
-	);
+    let table = $('#liq-generacion-masiva-table').DataTable();
+    
+    // Selecciona todas las filas, incluidas las que no están en la vista actual
+    table.rows().every(function () {
+        let rowNode = this.node();
+        $(rowNode).find('input[type="checkbox"]').prop('checked', true);
+    });
 }
 
 function deshabilitarTodos() {
-	$('#liq-generacion-masiva-table tbody input[type="checkbox"]').prop(
-		'checked',
-		false
-	);
+    let table = $('#liq-generacion-masiva-table').DataTable();
+    
+    // Desmarcar todas las filas, incluidas las que no están en la vista actual
+    table.rows().every(function () {
+        let rowNode = this.node();
+        $(rowNode).find('input[type="checkbox"]').prop('checked', false);
+    });
 }
+
+
 
 // jhernandez
 function GenerarLiquidaciones() {

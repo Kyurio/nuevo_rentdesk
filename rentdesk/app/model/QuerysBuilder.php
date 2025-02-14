@@ -178,13 +178,28 @@ class QueryBuilder
      */
     public function insert($table, $data)
     {
-        $columns = implode(", ", array_keys($data));
-        $placeholders = implode(", ", array_map(fn($key) => ":{$key}", array_keys($data)));
-
-        $sql = "INSERT INTO {$table} ({$columns}) VALUES ({$placeholders})";
-        return $this->execute($sql, $data);
+        try {
+            $columns = implode(", ", array_keys($data));
+            $placeholders = implode(", ", array_map(fn($key) => ":{$key}", array_keys($data)));
+    
+            $sql = "INSERT INTO {$table} ({$columns}) VALUES ({$placeholders})";
+    
+            echo "SQL: " . $sql . PHP_EOL;
+            echo "DATA: " . print_r($data, true) . PHP_EOL;
+    
+            $result = $this->execute($sql, $data);
+    
+            if (!$result) {
+                throw new PDOException("Error ejecutando el INSERT.");
+            }
+    
+            return $result;
+        } catch (PDOException $e) {
+            echo "⛔ ERROR: " . $e->getMessage() . PHP_EOL;
+            return false;
+        }
     }
-
+    
     /**
      * Realiza un UPDATE en una tabla.
      */

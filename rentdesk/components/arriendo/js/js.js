@@ -950,6 +950,8 @@ function enviarRentdesk() {
 				var mensaje = retorno[2];
 				var token = retorno[3];
 
+				alert(resultado);
+
 				if (resultado == 'OK') {
 					Swal.fire({
 						title: 'Arriendo guardado',
